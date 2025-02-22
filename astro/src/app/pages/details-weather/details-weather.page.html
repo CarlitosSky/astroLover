@@ -1,0 +1,81 @@
+<!--<app-header [tittle]="'mas info'"/>-->
+
+<ion-content>
+
+  @if (provincia) {
+
+  <ion-card>
+    <ion-card-header style="background-color: beige" class="ion-padding">
+      <ion-toolbar>
+
+      <ion-title>
+        {{provincia.ciudades[0].name}}
+      </ion-title>
+
+        <ion-buttons slot="start">
+          <ion-back-button default-href="/">
+          </ion-back-button>
+        </ion-buttons>
+      </ion-toolbar>
+
+    </ion-card-header>
+
+    <ion-card-content style="background-color: bisque" class="ion-padding">
+      <br>
+      <br>
+      <ion-text>
+       <strong> Province</strong> : {{provincia!.ciudades[0].nameProvince}}
+      </ion-text>
+      <br>
+      <br>
+      <ion-text>
+        <strong> weather:</strong>
+        {{provincia!.ciudades[0].stateSky.description}}
+      </ion-text>
+      <br>
+      <br>
+      <ion-text>
+        <strong> ID:</strong>
+        <ion-badge>{{provincia!.ciudades[0].id}}</ion-badge>
+      </ion-text>
+      <br>
+      <br>
+      <ion-text>
+        MAX :
+       <ion-badge>  {{provincia!.ciudades[0].temperatures.max }}</ion-badge>  MIN : <ion-badge> {{provincia.ciudades[0].temperatures.min}} </ion-badge>
+      </ion-text>
+
+
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <ion-text>
+       <strong>weather today:</strong>
+
+        {{provincia.today.p}}
+      </ion-text>
+
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <ion-text>
+        <strong>tomorrow weather:</strong>
+
+        {{provincia.today.p}}
+      </ion-text>
+
+
+
+<!--      <ion-text>Provincia: {{provincia.provincias[0].NOMBRE_PROVINCIA}}</ion-text>-->
+<!--      <ion-text>Comunidad autonoma: {{provincia.provincias[0].COMUNIDAD_CIUDAD_AUTONOMA}}</ion-text>-->
+<!--      <ion-text>Capital: {{provincia.provincias[0].CAPITAL_PROVINCIA}}</ion-text>-->
+
+    </ion-card-content>
+
+  </ion-card>
+  }
+</ion-content>

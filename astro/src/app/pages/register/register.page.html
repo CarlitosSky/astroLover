@@ -1,0 +1,101 @@
+<ion-content class="background">
+
+  <ion-grid>
+    <ion-row style="margin-top: 50px">
+      <ion-col  class="ion-justify-content-center column">
+        <ion-avatar class="avatarTele">
+          <ion-img src="/assets/tele.jpg"></ion-img>
+        </ion-avatar>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col class="ion-justify-content-center column">
+        <h1 class="roboto">ASTROLOVER</h1>
+      </ion-col>
+    </ion-row>
+
+
+
+<!--    form-->
+    <ion-row style="margin-top: 60px">
+      <ion-col class="ion-justify-content-center column">
+        <ion-list style="background: transparent">
+          <ion-item>
+            <ion-input  labelPlacement="floating" placeholder="Email" [clearInput]="true" [(ngModel)]="account.Email">
+              <div slot="label">Email <ion-text color="danger">(Required)</ion-text></div>
+            </ion-input>
+          </ion-item>
+        </ion-list>
+
+      </ion-col>
+    </ion-row>
+
+    <ion-row >
+      <ion-col class="ion-justify-content-center column">
+        <ion-list style="background: transparent">
+          <ion-item>
+            <ion-input labelPlacement="floating" placeholder="User" [(ngModel)]="gUser" [clearInput]="true">
+              <div slot="label">User <ion-text color="danger">(Required)</ion-text></div>
+            </ion-input>
+          </ion-item>
+        </ion-list>
+
+      </ion-col>
+    </ion-row>
+
+    <ion-row >
+      <ion-col class="ion-justify-content-center column">
+        <ion-list style="background: transparent">
+          <ion-item>
+            <ion-input type="password" labelPlacement="floating" placeholder="Password" [clearInput]="true" [(ngModel)]="account.Password">
+              <div slot="label">Password <ion-text color="danger">(Required)</ion-text></div>
+            </ion-input>
+          </ion-item>
+        </ion-list>
+
+      </ion-col>
+    </ion-row>
+
+    <ion-row >
+      <ion-col class="ion-justify-content-center column">
+        <ion-list style="background: transparent">
+          <ion-item>
+            <ion-input type="password" labelPlacement="floating" placeholder="Repeat Password" [clearInput]="true" [(ngModel)]="gRepeat">
+              <div slot="label">Repeat Password <ion-text color="danger">(Required)</ion-text></div>
+            </ion-input>
+          </ion-item>
+        </ion-list>
+
+      </ion-col>
+    </ion-row>
+
+<!--form-->
+
+    <ion-row>
+      <ion-col class="ion-justify-content-center column">
+        <ion-checkbox style="color: white" [(ngModel)]="gCheck">I agree to the terms and conditions</ion-checkbox>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col class="ion-justify-content-center column">
+        <ion-buttons>
+          <ion-button shape="round" class="btnLogin" (click)="register()">
+            <h1>Register</h1>
+          </ion-button>
+        </ion-buttons>
+      </ion-col>
+    </ion-row>
+
+
+
+    <ion-row>
+      <ion-col class="ion-justify-content-center column">
+        <ion-text color="light">Have an account? <strong routerLink="/login"> <span> <u> Log in </u> </span></strong></ion-text>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+
+</ion-content>

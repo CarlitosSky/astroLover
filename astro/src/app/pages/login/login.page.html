@@ -1,0 +1,68 @@
+<ion-content class="background">
+
+  <ion-grid>
+    <ion-row style="margin-top: 50px">
+      <ion-col  class="ion-justify-content-center column">
+        <ion-avatar class="avatarTele">
+          <ion-img src="/assets/tele.jpg"></ion-img>
+        </ion-avatar>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col class="ion-justify-content-center column">
+        <h1 class="roboto">ASTROLOVER</h1>
+      </ion-col>
+    </ion-row>
+
+
+
+    <!--    form-->
+    <ion-row style="margin-top: 60px">
+      <ion-col class="ion-justify-content-center column">
+        <ion-list style="background: transparent">
+          <ion-item>
+            <ion-input  labelPlacement="floating" placeholder="Email" type="email" [clearInput]="true" [(ngModel)]="gEmail">
+              <div slot="label">Email <ion-text color="danger">(Required)</ion-text></div>
+            </ion-input>
+          </ion-item>
+        </ion-list>
+
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row >
+      <ion-col class="ion-justify-content-center column">
+        <ion-list style="background: transparent">
+          <ion-item>
+            <ion-input type="password" labelPlacement="floating" placeholder="Password" [clearInput]="true" [(ngModel)]="gPassword">
+              <div slot="label">Password <ion-text color="danger">(Required)</ion-text></div>
+            </ion-input>
+          </ion-item>
+        </ion-list>
+
+      </ion-col>
+    </ion-row>
+
+    <!--form-->
+
+    <ion-row>
+      <ion-col class="ion-justify-content-center column">
+        <ion-buttons>
+          <ion-button shape="round" class="btnLogin" (click)="login()">
+            <h1>Log in</h1>
+          </ion-button>
+        </ion-buttons>
+
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col class="ion-justify-content-center column">
+        <ion-text color="light">Don't have an account? <strong routerLink="/register"> <span> <u> Sign up </u> </span></strong></ion-text>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

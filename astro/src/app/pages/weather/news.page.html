@@ -1,0 +1,53 @@
+<app-header [tittle]="'Weather'"/>
+
+<ion-content>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-searchbar [(ngModel)]="searchText" (ionInput)="filterProvincias($event)" debounce="500" placeholder="Search Provinces"></ion-searchbar>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-list>
+    @for (we of filteredProvinciaWeather; track $index) {
+
+      <ion-card [routerLink]="'/details-weather/'+we.CODPROV">
+
+        <ion-card-header>
+          {{we.CAPITAL_PROVINCIA}}
+        </ion-card-header>
+
+        <ion-card-content>
+          <p>{{we.COMUNIDAD_CIUDAD_AUTONOMA}}</p>
+          <p> Cod Autonoma  <ion-badge>{{we.CODAUTON}}</ion-badge> Cod provincia <ion-badge>{{we.CODPROV}}</ion-badge> </p>
+
+          <ion-text color="primary">click for more information</ion-text>
+
+        </ion-card-content>
+      </ion-card>
+
+    }
+  </ion-list>
+
+<!--  <ion-list>-->
+<!--    @for (we of arrayCityWeather; track $index) {-->
+
+<!--      <ion-card>-->
+
+<!--        <ion-card-header>-->
+<!--          {{we.name}}-->
+<!--        </ion-card-header>-->
+
+<!--        <ion-card-content>-->
+<!--          <p>{{we.nameProvince}}</p>-->
+<!--          <p>{{we.provincia[0].CAPITAL_PROVINCIA}}</p>-->
+<!--          <p> Temp Max  <ion-badge>{{we.temperatures.max}}</ion-badge> Temp Min <ion-badge>{{we.temperatures.min}}</ion-badge> </p>-->
+<!--        </ion-card-content>-->
+<!--      </ion-card>-->
+
+<!--    }-->
+<!--  </ion-list>-->
+
+</ion-content>
