@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {IonicModule} from "@ionic/angular";
+import {RouterLink} from "@angular/router";
 
 @Component({
   selector: 'app-menu',
@@ -7,7 +8,8 @@ import {IonicModule} from "@ionic/angular";
   styleUrls: ['./menu.component.scss'],
   standalone: true,
   imports: [
-    IonicModule
+    IonicModule,
+    RouterLink
   ]
 })
 export class MenuComponent  implements OnInit {

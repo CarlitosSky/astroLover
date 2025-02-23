@@ -1,10 +1,14 @@
 {
-  "name": "${PROJECT_NAME}",
+  "name": "astroLover",
   "version": "1.0.0",
-  "description": "",
+  "author": "Carlos Rios",
+  "description": "app for the final project made in ionic",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "private": true
+  "private": true,
+  "dependencies": {
+    "@ionic/cli": "^7.2.0"
+  }
 }

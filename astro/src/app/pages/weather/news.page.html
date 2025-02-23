@@ -13,7 +13,7 @@
   <ion-list>
     @for (we of filteredProvinciaWeather; track $index) {
 
-      <ion-card [routerLink]="'/details-weather/'+we.CODPROV">
+      <ion-card [routerLink]="'/tabs/details-weather/'+we.CODPROV">
 
         <ion-card-header>
           {{we.CAPITAL_PROVINCIA}}
@@ -30,24 +30,5 @@
 
     }
   </ion-list>
-
-<!--  <ion-list>-->
-<!--    @for (we of arrayCityWeather; track $index) {-->
-
-<!--      <ion-card>-->
-
-<!--        <ion-card-header>-->
-<!--          {{we.name}}-->
-<!--        </ion-card-header>-->
-
-<!--        <ion-card-content>-->
-<!--          <p>{{we.nameProvince}}</p>-->
-<!--          <p>{{we.provincia[0].CAPITAL_PROVINCIA}}</p>-->
-<!--          <p> Temp Max  <ion-badge>{{we.temperatures.max}}</ion-badge> Temp Min <ion-badge>{{we.temperatures.min}}</ion-badge> </p>-->
-<!--        </ion-card-content>-->
-<!--      </ion-card>-->
-
-<!--    }-->
-<!--  </ion-list>-->
 
 </ion-content>
