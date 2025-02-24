@@ -1,7 +1,7 @@
 import {inject, Injectable} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
-import {Provincia, Welcome} from "../common/weatherApp";
+import {APODAPI, Cultures, Galaxias, Planets, Provincia, RoverPhotos, Welcome} from "../common/weatherApp";
 import {environment} from "../../environments/environment";
 
 @Injectable({
@@ -20,5 +20,29 @@ export class DataService {
   getWeatherById(id:string):Observable<Welcome> {
     return this.http.get<Welcome>("https://www.el-tiempo.net/api/json/v2/provincias/"+id)
   }
+
+  getApodNasa():Observable<APODAPI> {
+    return this.http.get<APODAPI>("https://api.nasa.gov/planetary/apod?api_key="+environment.apiKey)
+  }
+
+  getRoverPhotos():Observable<RoverPhotos> {
+    return this.http.get<RoverPhotos>("https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key="+environment.apiKey)
+  }
+
+  getGalaxies():Observable<Galaxias[]> {
+    return this.http.get<Galaxias[]>('/assets/data/galaxias.json')
+  }
+
+  getPlanets():Observable<Planets[]> {
+    return this.http.get<Planets[]>('/assets/data/planetas.json')
+  }
+
+  getCultures():Observable<Cultures[]> {
+    return this.http.get<Cultures[]>('/assets/data/culturas.json')
+  }
+
+
+
+
 
 }

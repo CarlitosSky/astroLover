@@ -4,16 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87f09b7f-afdb-4eb2-af7e-76fe03092743" name="Changes" comment="rutas modificadas, creacion de nuevas paginas">
+    <list default="true" id="87f09b7f-afdb-4eb2-af7e-76fe03092743" name="Changes" comment="pagina de profile creada empezamos con firebase realtime">
+      <change afterPath="$PROJECT_DIR$/astro/src/assets/data/culturas.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/astro/src/assets/data/galaxias.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/astro/src/assets/data/planetas.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/astro/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/astro/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/app.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/astro/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/app.routes.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/astro/src/app/common/weatherApp.ts" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/common/weatherApp.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/astro/src/app/component/menu/menu.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/component/menu/menu.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro/src/app/component/menu/menu.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/component/menu/menu.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro/src/app/pages/register/register.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/pages/register/register.page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro/src/app/pages/guides/guides.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/pages/guides/guides.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro/src/app/pages/guides/guides.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/pages/guides/guides.page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro/src/app/pages/guides/guides.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/pages/guides/guides.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro/src/app/pages/login/login.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/pages/login/login.page.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/astro/src/app/pages/weather/news.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/pages/weather/news.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro/src/app/services/data.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/services/data.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/environments/environment.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +32,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript File" />
+        <option value="tsconfig.json" />
       </list>
     </option>
   </component>
@@ -42,6 +51,11 @@
     &quot;accountId&quot;: &quot;a825debd-a405-4188-b266-9cdeac702308&quot;
   }
 }</component>
+  <component name="JsbtTreeLayoutManager">
+    <layout place="tools.popupGrunt">
+      <scroll-view-position x="0" y="0" />
+    </layout>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -112,8 +126,23 @@
       <workItem from="1740258945066" duration="224000" />
       <workItem from="1740259261887" duration="357000" />
       <workItem from="1740259773491" duration="5947000" />
-      <workItem from="1740311934936" duration="3060000" />
+      <workItem from="1740311934936" duration="13774000" />
+      <workItem from="1740337978463" duration="79000" />
+      <workItem from="1740338061636" duration="31000" />
+      <workItem from="1740338123773" duration="3127000" />
+      <workItem from="1740350221890" duration="396000" />
+      <workItem from="1740350637433" duration="1044000" />
+      <workItem from="1740392878744" duration="3452000" />
     </task>
+    <task id="LOCAL-00001" summary="pagina de profile creada empezamos con firebase realtime">
+      <option name="closed" value="true" />
+      <created>1740315211947</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1740315211947</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,6 +150,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="rutas modificadas, creacion de nuevas paginas" />
-    <option name="LAST_COMMIT_MESSAGE" value="rutas modificadas, creacion de nuevas paginas" />
+    <MESSAGE value="pagina de profile creada empezamos con firebase realtime" />
+    <option name="LAST_COMMIT_MESSAGE" value="pagina de profile creada empezamos con firebase realtime" />
   </component>
 </project>

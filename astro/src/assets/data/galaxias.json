@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1",
+    "nombre": "Galaxia de Andrómeda",
+    "descripcion": "La galaxia de Andrómeda, también conocida como M31, es la galaxia espiral más cercana a la Vía Láctea y se encuentra a aproximadamente 2.5 millones de años luz de distancia. Es visible a simple vista desde la Tierra y contiene alrededor de un billón de estrellas.",
+    "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEuhI-qRpBok7iEc_m_kPHBEjvKaTJZ9_Q4g&s"
+  },
+  {
+    "id": "2",
+    "nombre": "Vía Láctea",
+    "descripcion": "La Vía Láctea es la galaxia que alberga nuestro Sistema Solar. Es una galaxia espiral barrada que contiene entre 100.000 y 400.000 millones de estrellas, incluyendo nuestro Sol. Su diámetro es de aproximadamente 100.000 años luz.",
+    "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/ESO-VLT-Laser-phot-33a-07.jpg/1200px-ESO-VLT-Laser-phot-33a-07.jpg"
+  },
+  {
+    "id": "3",
+    "nombre": "Galaxia del Triángulo",
+    "descripcion": "También conocida como M33, la Galaxia del Triángulo es una galaxia espiral ubicada a unos 3 millones de años luz de la Tierra. Es la tercera galaxia más grande del Grupo Local, después de la Vía Láctea y Andrómeda.",
+    "foto": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Messier_33.jpg"
+  },
+  {
+    "id": "4",
+    "nombre": "Galaxia del Sombrero",
+    "descripcion": "Conocida oficialmente como M104, la Galaxia del Sombrero es una galaxia espiral caracterizada por su prominente bulbo central y un disco circundante de polvo oscuro, lo que le da la apariencia de un sombrero. Se encuentra a unos 28 millones de años luz de la Tierra.",
+    "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/M104_ngc4594_sombrero_galaxy_hi-res.jpg/1200px-M104_ngc4594_sombrero_galaxy_hi-res.jpg"
+  },
+  {
+    "id": "5",
+    "nombre": "Galaxia del Remolino",
+    "descripcion": "Oficialmente conocida como M51a o NGC 5194, la Galaxia del Remolino es una galaxia espiral famosa por sus bien definidas estructuras en espiral. Se encuentra a aproximadamente 23 millones de años luz de la Tierra.",
+    "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Messier51.jpg/1200px-Messier51.jpg"
+  }
+]

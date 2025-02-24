@@ -38,6 +38,9 @@ export class LoginPage implements OnInit {
   // Initialize Firebase Authentication and get a reference to the service
    oAuth = getAuth(this.oApp);
 
+  currentUser: any = null;
+  userId: string = '';
+
   gEmail: string = "";
   gPassword: string = "";
 

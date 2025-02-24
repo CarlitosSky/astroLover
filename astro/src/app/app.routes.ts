@@ -64,6 +64,30 @@ export const routes: Routes = [
         path: 'configuration',
         loadComponent: () => import('./pages/configuration/configuration.page').then(m => m.ConfigurationPage)
       },
+      {
+        path: 'solar',
+        loadComponent: () => import('./pages/solar/solar.page').then( m => m.SolarPage)
+      },
+      {
+        path: 'galaxies',
+        loadComponent: () => import('./pages/galaxies/galaxies.page').then( m => m.GalaxiesPage)
+      },
+      {
+        path: 'cultures',
+        loadComponent: () => import('./pages/cultures/cultures.page').then( m => m.CulturesPage)
+      },
+      {
+        path: 'apod',
+        loadComponent: () => import('./pages/apod/apod.page').then( m => m.ApodPage)
+      },
+      {
+        path: 'rover',
+        loadComponent: () => import('./pages/rover/rover.page').then( m => m.RoverPage)
+      },
     ]
   },
+
+
+
+
 ];

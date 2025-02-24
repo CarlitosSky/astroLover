@@ -51,3 +51,87 @@ export interface Provincia {
 export interface Today {
   p: string[];
 }
+
+export interface APODAPI {
+  date:            Date;
+  explanation:     string;
+  hdurl:           string;
+  media_type:      string;
+  service_version: string;
+  title:           string;
+  url:             string;
+}
+
+export interface RoverPhotos {
+  photos: Photo[];
+}
+
+export interface Photo {
+  id:         number;
+  sol:        number;
+  camera:     Camera;
+  img_src:    string;
+  earth_date: Date;
+  rover:      Rover;
+}
+
+export interface Camera {
+  id:        number;
+  name:      CameraName;
+  rover_id:  number;
+  full_name: FullName;
+}
+
+export enum FullName {
+  ChemistryAndCameraComplex = "Chemistry and Camera Complex",
+  FrontHazardAvoidanceCamera = "Front Hazard Avoidance Camera",
+  MastCamera = "Mast Camera",
+  NavigationCamera = "Navigation Camera",
+  RearHazardAvoidanceCamera = "Rear Hazard Avoidance Camera",
+}
+
+export enum CameraName {
+  Chemcam = "CHEMCAM",
+  Fhaz = "FHAZ",
+  Mast = "MAST",
+  Navcam = "NAVCAM",
+  Rhaz = "RHAZ",
+}
+
+export interface Rover {
+  id:           number;
+  name:         RoverName;
+  landing_date: Date;
+  launch_date:  Date;
+  status:       Status;
+}
+
+export enum RoverName {
+  Curiosity = "Curiosity",
+}
+
+export enum Status {
+  Active = "active",
+}
+
+export interface Galaxias {
+  id: string;
+  nombre:      string;
+  descripcion: string;
+  foto:        string;
+}
+
+export interface Planets {
+  nombre:      string;
+  descripcion: string;
+  foto:        string;
+}
+
+export interface Cultures {
+  nombre:      string;
+  descripcion: string;
+  foto:        string;
+}
+
+
+

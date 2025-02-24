@@ -1,1 +1,65 @@
 <app-header [tittle]="'Guides'"></app-header>
+
+<ion-content class="ion-padding">
+
+  <swiper-container pagination="true" style="height: 550px">
+
+    <swiper-slide>
+
+
+  <ion-row class="myMargin">
+    <ion-col class="ion-justify-content-center ion-align-items-center" style="display: flex">
+      <ion-button class="myButton" routerLink="/tabs/solar">
+        Solar System
+      </ion-button>
+    </ion-col>
+
+    <ion-col class="ion-justify-content-center ion-align-items-center" style="display: flex">
+      <ion-button class="myButton" routerLink="/tabs/galaxies">
+        Galaxies
+      </ion-button>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col class="ion-justify-content-center ion-align-items-center" style="display: flex">
+      <ion-button class="myButton" routerLink="/tabs/apod">
+        APOD
+      </ion-button>
+    </ion-col>
+
+    <ion-col class="ion-justify-content-center ion-align-items-center" style="display: flex">
+      <ion-button class="myButton" routerLink="/tabs/cultures">
+        Cultures of sky
+      </ion-button>
+    </ion-col>
+  </ion-row>
+
+    </swiper-slide>
+
+
+
+
+    <swiper-slide>
+      <ion-row class="myMargin">
+        <ion-col class="ion-justify-content-center ion-align-items-center" style="display: flex">
+          <ion-button class="myButton" routerLink="/tabs/rover">
+           Rover Photos
+          </ion-button>
+        </ion-col>
+
+<!--        <ion-col class="ion-justify-content-center ion-align-items-center" style="display: flex">-->
+<!--          <ion-button class="myButton" routerLink="/tabs/cultures">-->
+<!--            Cultures of sky-->
+<!--          </ion-button>-->
+<!--        </ion-col>-->
+
+      </ion-row>
+
+
+    </swiper-slide>
+
+
+
+  </swiper-container>
+</ion-content>

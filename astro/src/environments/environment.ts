@@ -12,6 +12,6 @@ export const environment = {
     storageBucket: "astrolover-f86ca.firebasestorage.app",
     messagingSenderId: "515649607938",
     appId: "1:515649607938:web:d56c70e92c5218912fca1b"
-  }
-
+  },
+  apiKey: "bUfmvjnghdMgRS7TWyOGoRFoJAgVAzdCqo5WWgMQ"
 };

@@ -3,7 +3,8 @@ import { IonApp, IonRouterOutlet } from '@ionic/angular/standalone';
 import {addIcons} from "ionicons";
 import {camera, footsteps, person, rainy, map, reader} from "ionicons/icons";
 import {MenuComponent} from "./component/menu/menu.component";
-
+import {register} from "swiper/element/bundle";
+register()
 
 @Component({
   selector: 'app-root',

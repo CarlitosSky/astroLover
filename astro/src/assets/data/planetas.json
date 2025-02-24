@@ -1,0 +1,52 @@
+[
+  {
+    "nombre": "Mercurio",
+    "descripcion": "Mercurio es el planeta más cercano al Sol y el más pequeño del Sistema Solar. Carece de atmósfera significativa, lo que provoca temperaturas extremas entre el día y la noche.",
+    "foto": "https://content.nationalgeographic.com.es/medio/2022/07/31/el-planeta-mercurio_c7bafef8_1280x720.jpg"
+  },
+  {
+    "nombre": "Venus",
+    "descripcion": "Venus es el segundo planeta desde el Sol y es similar en tamaño y composición a la Tierra. Sin embargo, su densa atmósfera rica en dióxido de carbono provoca un efecto invernadero extremo, haciendo su superficie extremadamente caliente.",
+    "foto": "https://content.nationalgeographic.com.es/medio/2022/07/31/imagen-de-venus-tomada-por-la-sonda-mariner-10_d562d6da_800x539.jpg"
+  },
+  {
+    "nombre": "Tierra",
+    "descripcion": "La Tierra es el tercer planeta desde el Sol y el único conocido que alberga vida. Posee una atmósfera rica en oxígeno y una superficie cubierta en su mayoría por agua.",
+    "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/The_Earth_seen_from_Apollo_17.jpg/640px-The_Earth_seen_from_Apollo_17.jpg"
+  },
+  {
+    "nombre": "Marte",
+    "descripcion": "Marte, conocido como el 'Planeta Rojo' debido a su color característico, es el cuarto planeta desde el Sol. Tiene la montaña más alta y el cañón más profundo del Sistema Solar.",
+    "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/OSIRIS_Mars_true_color.jpg/1200px-OSIRIS_Mars_true_color.jpg"
+  },
+  {
+    "nombre": "Júpiter",
+    "descripcion": "Júpiter es el planeta más grande del Sistema Solar y el quinto desde el Sol. Es un gigante gaseoso conocido por su Gran Mancha Roja, una tormenta gigantesca que ha existido durante siglos.",
+    "foto": "https://spaceplace.nasa.gov/all-about-jupiter/sp/jupiter_turbulent-atmosphere.sp.jpg"
+  },
+  {
+    "nombre": "Saturno",
+    "descripcion": "Saturno es el sexto planeta desde el Sol y es famoso por sus impresionantes anillos compuestos de hielo y roca. Es el segundo planeta más grande del Sistema Solar.",
+    "foto": "https://www.fayerwayer.com/resizer/v2/ANRIEQTKIJCPRCWCWJUCIIGUSE.jpg?auth=14db3ff6ffad08d0c552c7c9f3483157aa44159149bfb7d61418fce165532aa5&width=800&height=571"
+  },
+  {
+    "nombre": "Urano",
+    "descripcion": "Urano es el séptimo planeta desde el Sol y tiene una particular inclinación axial que lo hace rotar de lado. Es un gigante helado con una atmósfera compuesta principalmente de hidrógeno y helio.",
+    "foto": "https://static.nationalgeographicla.com/files/styles/image_3200/public/STILL_B_1280x720_1514860611774.jpg?w=1900&h=1069"
+  },
+  {
+    "nombre": "Neptuno",
+    "descripcion": "Neptuno es el octavo y más lejano planeta conocido del Sistema Solar. Es similar en composición a Urano y es conocido por sus fuertes vientos y tormentas.",
+    "foto": "https://content.nationalgeographic.com.es/medio/2022/08/03/el-planeta-neptuno_bfb396f8_1280x1278.jpg"
+  },
+  {
+    "nombre": "Luna",
+    "descripcion": "La Luna es el único satélite natural de la Tierra, situado a una distancia promedio de 384,400 km. Con un diámetro de 3,476 km, completa una órbita alrededor de nuestro planeta aproximadamente cada 27.32 días.",
+    "foto": "https://static.nationalgeographic.es/files/styles/image_3200/public/21275.600x450.jpg?w=1600"
+  },
+  {
+    "nombre": "Sol",
+    "descripcion": "El Sol es una estrella de tipo espectral G2V, ubicada en el centro del Sistema Solar. Con un diámetro de aproximadamente 1.4 millones de kilómetros, contiene el 99.8% de la masa total del sistema. Su energía, generada por fusión nuclear en su núcleo, es fundamental para la existencia de vida en la Tierra.",
+    "foto": "https://media.es.wired.com/photos/673e0e6c4d044219cd3dce93/master/w_1600%2Cc_limit/PHI_s_view_of_the_Sun_in_visible_light_pillars.jpg"
+  }
+]

@@ -1,0 +1,77 @@
+[
+  {
+    "nombre": "Mitología Inca",
+    "descripcion": "Los incas observaban el cielo con gran devoción, identificando constelaciones oscuras formadas por nebulosas, como la 'Llama Celestial'. Estas figuras tenían un profundo significado en su cosmovisión y agricultura.",
+    "foto": "https://codigooculto.com/wp-content/uploads/2021/02/astronomia-inca.jpg"
+  },
+  {
+    "nombre": "Mitología Maya",
+    "descripcion": "Los mayas desarrollaron una astronomía avanzada, construyendo observatorios para seguir el movimiento de los cuerpos celestes. Asociaban planetas y estrellas con deidades y eventos mitológicos.",
+    "foto": "https://vagamundos.travel/wp-content/uploads/2021/10/thumb_1294_news_normal.jpeg"
+  },
+  {
+    "nombre": "Mitología Azteca",
+    "descripcion": "Los aztecas creían que el Sol necesitaba sacrificios para mantenerse en movimiento. Identificaron constelaciones y planetas, relacionándolos con sus dioses y mitos de creación.",
+    "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpJ55GWQgc51cfdUtQulWFQLWCAvxd8KzEiQ&s"
+  },
+  {
+    "nombre": "Mitología Navajo",
+    "descripcion": "Para los navajos, las estrellas fueron colocadas en el cielo por Coyote. Las constelaciones servían como guías estacionales y estaban vinculadas a historias morales y enseñanzas.",
+    "foto": "https://pueblosoriginarios.com/norte/suroeste/navajo/imagenes/cosmos.jpg"
+  },
+  {
+    "nombre": "Mitología Mapuche",
+    "descripcion": "Los mapuches de Chile y Argentina veían la Vía Láctea como un río celestial. Sus constelaciones y cuerpos celestes estaban integrados en su calendario agrícola y rituales.",
+    "foto": "https://explora.cl/wp-content/uploads/2020/06/2-Ilustraci%C3%B3n-de-Ramon-Daza-para-el-libro-%E2%80%9CWenumapu.-Astronom%C3%ADa-y-Cosmolog%C3%ADa-Mapuche%E2%80%9D-de-Margarita-Canio-y-Gabriel-Pozo.jpg"
+  },
+  {
+    "nombre": "Mitología China",
+    "descripcion": "La astronomía china es una de las más antiguas, con constelaciones propias como el Dragón Azul y el Tigre Blanco. Estas figuras tenían implicaciones astrológicas y estaban relacionadas con las estaciones.",
+    "foto": "https://confuciomag.com/wp-content/uploads/2023/11/Mesa-de-trabajo-1@2x-100.jpg"
+  },
+  {
+    "nombre": "Mitología Japonesa",
+    "descripcion": "En Japón, las estrellas y constelaciones están vinculadas a deidades y leyendas, como Orihime y Hikoboshi, protagonistas del festival Tanabata que celebra su reunión anual en el cielo.",
+    "foto": "https://atlasestelar.net/wp-content/uploads/grabado-japones-vintage-dragon.webp"
+  },
+  {
+    "nombre": "Mitología Hindú",
+    "descripcion": "La astronomía védica identifica 27 nakshatras (mansiones lunares) y constelaciones asociadas con deidades específicas, utilizadas en la astrología y rituales hindúes.",
+    "foto": "https://media.istockphoto.com/id/512552602/es/vector/tortuga-mundo-en-la-mitolog%C3%ADa-hind%C3%BA.jpg?s=170667a&w=0&k=20&c=45FMQQttv5URwZ-TsMBqjuILGENhwYmoCt90xycaNl0="
+  },
+  {
+    "nombre": "Mitología Coreana",
+    "descripcion": "La mitología coreana incluye leyendas como la del pastor y la tejedora, representados por las estrellas Altair y Vega, cuya separación y reunión anual simbolizan el amor eterno.",
+    "foto": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Goguryeo_moon.jpg"
+  },
+  {
+    "nombre": "Mitología Filipina",
+    "descripcion": "Las culturas filipinas precoloniales tenían constelaciones propias, como Balatik, que representaba una trampa de caza y se utilizaba para marcar temporadas agrícolas.",
+    "foto": "https://preview.redd.it/j7cagop1lfbb1.jpg?auto=webp&s=c52854a284047f7aa3ef46b0e2547b625b6207d3"
+  },
+  {
+    "nombre": "Mitología Mongola",
+    "descripcion": "Los mongoles tienen leyendas sobre el cielo, como la historia de las siete estrellas de la Osa Mayor, que representan a siete ancestros o guerreros.",
+    "foto": "https://todosobrelamitologia.com/wp-content/uploads/Mitologia-mongola.jpg"
+  },
+  {
+    "nombre": "Mitología Tibetana",
+    "descripcion": "La cosmología tibetana combina elementos budistas e indígenas, con constelaciones y planetas que influyen en la astrología y prácticas espirituales.",
+    "foto": "https://i.etsystatic.com/28148018/r/il/9ebfe1/3346385823/il_fullxfull.3346385823_hu40.jpg"
+  },
+  {
+    "nombre": "Mitología Griega",
+    "descripcion": "Los antiguos griegos identificaron numerosas constelaciones basadas en sus mitos y leyendas. Por ejemplo, la constelación de Andrómeda representa a la princesa etíope encadenada a una roca, salvada por Perseo de un monstruo marino.",
+    "foto": "https://www.fernandoneirapaz.com/wp-content/uploads/2022/07/maxresdefault.jpg"
+  },
+  {
+    "nombre": "Mitología Nórdica",
+    "descripcion": "Los pueblos nórdicos veían el cielo como el gran árbol Yggdrasil, con diferentes mundos en sus ramas. Las estrellas eran chispas de la fragua de los dioses.",
+    "foto": "https://i.pinimg.com/736x/ca/56/28/ca562877973f13aab0a74adcef85e9fc.jpg"
+  },
+  {
+    "nombre": "Mitología Celta",
+    "descripcion": "Los celtas tenían una profunda conexión con la naturaleza y el cielo. Celebraban festivales como Samhain, marcando la transición entre estaciones y honrando a los ancestros.",
+    "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeNWjG7SQJRjc0DgcMdiIA_1QfVRQLiEGzHg&s"
+  }
+]
