@@ -1,1 +1,205 @@
 <app-header [tittle]="'Meet up'"></app-header>
+
+<ion-content class="ion-padding ion-margin-top">
+
+  <ion-grid>
+    <ion-row>
+      <ion-col class="ion-justify-content-center ion-align-items-center" style="display: flex">
+        <ion-button (click)="btnLoadAllMeets()">All meets</ion-button>
+      </ion-col>
+
+      <ion-col>
+        <ion-button (click)="btnLoadMyMeets()">My meets</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+
+      @if (myMeetsBollean) {
+        <ion-col>
+          @for (meet of todos; track $index) {
+
+
+            <ion-card>
+              <ion-card-header>
+                <ion-toolbar class="ion-text-center">
+                  <ion-text>{{meet.title}}</ion-text>
+                </ion-toolbar>
+              </ion-card-header>
+
+              <ion-card-content>
+
+                <ion-grid>
+                  <ion-row>
+                    <ion-col>
+                      <ion-img [src]="meet.img" style="height: 150px; width: 100%;"/>
+                    </ion-col>
+                  </ion-row>
+
+                  <ion-row>
+                    <ion-col class="ion-text-center">
+                      <ion-text>{{ meet.site }}</ion-text>
+                    </ion-col>
+
+                    <ion-col class="ion-text-center">
+                      <ion-text>{{ meet.hour }}</ion-text>
+                    </ion-col>
+                  </ion-row>
+
+                </ion-grid>
+
+
+              </ion-card-content>
+
+            </ion-card>
+
+
+          }
+        </ion-col>
+      }
+
+    </ion-row>
+
+  </ion-grid>
+
+  <!--  add here-->
+
+  <ion-fab horizontal="end" vertical="bottom" slot="fixed">
+    <ion-fab-button id="abrirTodo">
+      <ion-icon name="add">
+      </ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <ion-modal #modalClose [trigger]="'abrirTodo'"
+             style="height: 600px; width: 100%; margin-top: 150px; border-radius: 30px">
+
+    <ng-template>
+      <ion-content>
+        <ion-card>
+          <ion-card-header>
+            <ion-toolbar class="ion-text-center">
+              <ion-buttons slot="start" class="ion-margin-start">
+                <ion-button (click)="modalClose.dismiss()">
+                  <ion-icon name="arrow-back"></ion-icon>
+                </ion-button>
+              </ion-buttons>
+              <ion-text>Create Meet</ion-text>
+            </ion-toolbar>
+          </ion-card-header>
+
+          <ion-card-content class="ion-padding ion-margin-top">
+
+            <ion-grid>
+
+              <!--    form-->
+              <ion-row style="">
+                <ion-col class="ion-justify-content-center ion-align-items-center" style="display: flex">
+                  <ion-list style="background: transparent">
+                    <ion-item>
+                      <ion-input labelPlacement="floating" placeholder="tittle" type="tittle" [clearInput]="true"
+                                 [(ngModel)]="myMeet.title">
+                        <div slot="label">Tittle
+                          <ion-text color="danger">(Required)</ion-text>
+                        </div>
+                      </ion-input>
+                    </ion-item>
+                  </ion-list>
+                </ion-col>
+              </ion-row>
+
+              <ion-row style="">
+                <ion-col class="ion-justify-content-center ion-align-items-center" style="display: flex">
+                  <ion-list style="background: transparent">
+                    <ion-item>
+                      <ion-input labelPlacement="floating" placeholder="Your description" type="position"
+                                 [clearInput]="true"
+                                 [(ngModel)]="myMeet.description">
+                        <div slot="label">Description
+                        </div>
+                      </ion-input>
+                    </ion-item>
+                  </ion-list>
+                </ion-col>
+              </ion-row>
+
+              <ion-row style="">
+                <ion-col class="ion-justify-content-center ion-align-items-center" style="display: flex">
+                  <ion-list style="background: transparent">
+                    <ion-item>
+                      <ion-input labelPlacement="floating" placeholder="Date" type="position" [clearInput]="true"
+                                 [(ngModel)]="myMeet.date">
+                        <div slot="label">Date
+                        </div>
+                      </ion-input>
+                    </ion-item>
+                  </ion-list>
+                </ion-col>
+              </ion-row>
+
+              <ion-row style="">
+                <ion-col class="ion-justify-content-center ion-align-items-center" style="display: flex">
+                  <ion-list style="background: transparent">
+                    <ion-item>
+                      <ion-input labelPlacement="floating" placeholder="Valencia, street..." type="position"
+                                 [clearInput]="true"
+                                 [(ngModel)]="myMeet.site">
+                        <div slot="label">Site
+                        </div>
+                      </ion-input>
+                    </ion-item>
+                  </ion-list>
+                </ion-col>
+              </ion-row>
+
+
+              <ion-row style="">
+                <ion-col class="ion-justify-content-center ion-align-items-center" style="display: flex">
+                  <ion-list style="background: transparent">
+                    <ion-item>
+                      <ion-input labelPlacement="floating" placeholder="12:00" type="position" [clearInput]="true"
+                                 [(ngModel)]="myMeet.hour">
+                        <div slot="label">Hour
+                        </div>
+                      </ion-input>
+                    </ion-item>
+                  </ion-list>
+                </ion-col>
+              </ion-row>
+
+              <ion-row style="">
+                <ion-col class="ion-justify-content-center ion-align-items-center" style="display: flex">
+                  <ion-list style="background: transparent">
+                    <ion-item>
+                      <ion-input labelPlacement="floating" placeholder="Image url" type="position" [clearInput]="true"
+                                 [(ngModel)]="myMeet.img">
+                        <div slot="label">Image
+                        </div>
+                      </ion-input>
+                    </ion-item>
+                  </ion-list>
+                </ion-col>
+              </ion-row>
+
+              <!--form-->
+
+              <ion-row class="ion-margin-top">
+                <ion-col class="ion-justify-content-center ion-align-items-center" style="display: flex">
+                  <ion-buttons>
+                    <ion-button shape="round" class="btnLogin" (click)="addTodo();">
+                      <h1>Create logBook</h1>
+                    </ion-button>
+                  </ion-buttons>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+
+          </ion-card-content>
+
+        </ion-card>
+      </ion-content>
+    </ng-template>
+
+  </ion-modal>
+
+</ion-content>

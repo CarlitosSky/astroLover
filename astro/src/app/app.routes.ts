@@ -84,10 +84,20 @@ export const routes: Routes = [
         path: 'rover',
         loadComponent: () => import('./pages/rover/rover.page').then( m => m.RoverPage)
       },
+      {
+        path: 'todolist',
+        loadComponent: () => import('./pages/todolist/todolist.page').then( m => m.TodolistPage)
+      },
+      {
+        path: 'log-book',
+        loadComponent: () => import('./pages/log-book/log-book.page').then( m => m.LogBookPage)
+      },
+      {
+        path: 'acknow',
+        loadComponent: () => import('./pages/acknow/acknow.page').then( m => m.AcknowPage)
+      },
     ]
   },
-
-
 
 
 ];

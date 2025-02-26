@@ -1,1 +1,64 @@
-<app-header [tittle]="'My zone'"></app-header>
+<app-header [tittle]="'My personal zone'"></app-header>
+
+<ion-content class="ion-padding">
+
+  <swiper-container pagination="true" style="height: 550px">
+
+    <swiper-slide>
+
+      <ion-row class="myMargin">
+        <ion-col class="ion-justify-content-center ion-align-items-center" style="display: flex">
+          <ion-button class="myButton" routerLink="/tabs/todolist">
+            TodoList
+          </ion-button>
+        </ion-col>
+
+        <ion-col class="ion-justify-content-center ion-align-items-center" style="display: flex">
+          <ion-button class="myButton" routerLink="/tabs/log-book">
+            Logbook
+          </ion-button>
+        </ion-col>
+      </ion-row>
+
+<!--      <ion-row>-->
+<!--        <ion-col class="ion-justify-content-center ion-align-items-center" style="display: flex">-->
+<!--          <ion-button class="myButton" routerLink="/tabs/apod">-->
+<!--            APOD-->
+<!--          </ion-button>-->
+<!--        </ion-col>-->
+
+<!--        <ion-col class="ion-justify-content-center ion-align-items-center" style="display: flex">-->
+<!--          <ion-button class="myButton" routerLink="/tabs/cultures">-->
+<!--            Cultures of sky-->
+<!--          </ion-button>-->
+<!--        </ion-col>-->
+<!--      </ion-row>-->
+
+    </swiper-slide>
+
+
+
+
+<!--    <swiper-slide>-->
+<!--      <ion-row class="myMargin">-->
+<!--        <ion-col class="ion-justify-content-center ion-align-items-center" style="display: flex">-->
+<!--          <ion-button class="myButton" routerLink="/tabs/rover">-->
+<!--            Rover Photos-->
+<!--          </ion-button>-->
+<!--        </ion-col>-->
+
+<!--        &lt;!&ndash;        <ion-col class="ion-justify-content-center ion-align-items-center" style="display: flex">&ndash;&gt;-->
+<!--        &lt;!&ndash;          <ion-button class="myButton" routerLink="/tabs/cultures">&ndash;&gt;-->
+<!--        &lt;!&ndash;            Cultures of sky&ndash;&gt;-->
+<!--        &lt;!&ndash;          </ion-button>&ndash;&gt;-->
+<!--        &lt;!&ndash;        </ion-col>&ndash;&gt;-->
+
+<!--      </ion-row>-->
+
+
+<!--    </swiper-slide>-->
+
+
+
+  </swiper-container>
+</ion-content>
