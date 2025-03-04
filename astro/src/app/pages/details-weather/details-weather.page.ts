@@ -17,6 +17,7 @@ import {DataService} from "../../services/data.service";
 import {Provincia, Welcome} from "../../common/weatherApp";
 import {ActivatedRoute, Router} from "@angular/router";
 import {HeaderComponent} from "../../component/header/header.component";
+import {LoadingController} from "@ionic/angular";
 
 @Component({
   selector: 'app-details-weather',
@@ -29,6 +30,7 @@ export class DetailsWeatherPage implements OnInit {
   private route: ActivatedRoute = inject(ActivatedRoute)
   private readonly data:DataService = inject(DataService)
   provincia!:Welcome
+  private readonly loadingCtrl: LoadingController = inject(LoadingController)
 
   id = this.route.snapshot.paramMap.get('CODPROV')!;
 
@@ -40,10 +42,18 @@ export class DetailsWeatherPage implements OnInit {
   this.loadPro()
   }
 
-  private loadPro() {
+  async loadPro() {
+
+    const loading = await this.loadingCtrl.create({
+      message: 'Loading...',
+      spinner: 'bubbles'
+    });
+
+    await loading.present()
 
     this.data.getWeatherById(this.id).subscribe({
       next: value => {
+        loading.dismiss()
         this.provincia = value
         console.log(value)
       },error: err => console.error(err),
@@ -51,8 +61,6 @@ export class DetailsWeatherPage implements OnInit {
         console.log('completed')
         console.log(this.provincia)
       }
-
-
     })
 
   }

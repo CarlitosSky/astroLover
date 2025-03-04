@@ -45,10 +45,6 @@ export const routes: Routes = [
         loadComponent: () => import('./pages/weather/news.page').then(m => m.NewsPage)
       },
       {
-        path: 'pollution',
-        loadComponent: () => import('./pages/pollution/pollution.page').then(m => m.PollutionPage)
-      },
-      {
         path: 'camera',
         loadComponent: () => import('./pages/camera/camera.page').then(m => m.CameraPage)
       },
@@ -96,8 +92,15 @@ export const routes: Routes = [
         path: 'acknow',
         loadComponent: () => import('./pages/acknow/acknow.page').then( m => m.AcknowPage)
       },
+      {
+        path: 'curiosity',
+        loadComponent: () => import('./pages/curiosity/curiosity.page').then( m => m.CuriosityPage)
+      },
+      {
+        path: 'calcule-weight',
+        loadComponent: () => import('./pages/calcule-weight/calcule-weight.page').then( m => m.CalculeWeightPage)
+      },
     ]
   },
-
 
 ];

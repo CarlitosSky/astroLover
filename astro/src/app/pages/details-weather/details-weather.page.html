@@ -8,7 +8,7 @@
     <ion-card-header style="background-color: beige" class="ion-padding">
       <ion-toolbar>
       <ion-title>
-        {{provincia.ciudades[0].name}}
+        {{provincia!.ciudades[0].name}}
       </ion-title>
 
         <ion-buttons slot="start">
@@ -53,7 +53,7 @@
       <ion-text>
        <strong>weather today:</strong>
 
-        {{provincia.today.p}}
+        {{provincia!.today.p}}
       </ion-text>
 
       <br>
@@ -64,7 +64,7 @@
       <ion-text>
         <strong>tomorrow weather:</strong>
 
-        {{provincia.today.p}}
+        {{provincia!.today.p}}
       </ion-text>
 
 

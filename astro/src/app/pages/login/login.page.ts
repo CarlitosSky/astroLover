@@ -50,48 +50,11 @@ export class LoginPage implements OnInit {
   login() {
     signInWithEmailAndPassword(this.oAuth, this.gEmail, this.gPassword)
       .then((userCredential) => {
-        this.router.navigateByUrl("/tabs/profile"); // Redirige al perfil
+        this.router.navigateByUrl("/tabs/personal");
         this.toastService.loadToast("Login exitoso", 2000, 'success');
       })
-      .catch((error) => {
-        this.toastService.loadToast(this.getFriendlyError(error.code), 2000, 'danger');
+      .catch((error:any) => {
+        this.toastService.loadToast(error.message, 2000, 'danger');
       });
   }
-
-  private getFriendlyError(errorCode: string): string {
-    const errors: { [key: string]: string } = {
-      'auth/invalid-email': 'Email inválido',
-      'auth/user-disabled': 'Usuario deshabilitado',
-      'auth/user-not-found': 'Usuario no encontrado',
-      'auth/wrong-password': 'Contraseña incorrecta',
-      'auth/too-many-requests': 'Demasiados intentos, intenta más tarde'
-    };
-    return errors[errorCode] || 'Error desconocido';
-  }
-
-
-  // login() {
-  //
-  //   // if (this.gEmail == "" || this.gPassword == ""){
-  //   //   this.toastService.loadToast("Empty fields",2000,'danger')
-  //   // }
-  //
-  //   signInWithEmailAndPassword(this.oAuth, this.gEmail, this.gPassword)
-  //     .then((userCredential) => {
-  //       // Signed up
-  //       const user = userCredential.user;
-  //       console.log(user)
-  //       this.toastService.loadToast("Login succesfully", 2000, 'success')
-  //       this.router.navigateByUrl("/tabs/weather")
-  //
-  //       // ...
-  //     })
-  //     .catch((error:any) => {
-  //       const errorCode = error.code;
-  //       const errorMessage = error.message;
-  //       this.toastService.loadToast(errorMessage, 2000,'danger')
-  //       // ..
-  //     });
-  //
-  // }
 }

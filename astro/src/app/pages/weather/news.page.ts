@@ -7,7 +7,7 @@ import {
   IonCol,
   IonContent,
   IonGrid,
-  IonHeader,
+  IonHeader, IonInfiniteScroll, IonInfiniteScrollContent,
   IonItem,
   IonList,
   IonRow, IonSearchbar, IonText,
@@ -20,23 +20,26 @@ import {Ciudade, Provincia} from "../../common/weatherApp";
 import {log} from "@angular-devkit/build-angular/src/builders/ssr-dev-server";
 import index from "eslint-plugin-jsdoc";
 import {RouterLink} from "@angular/router";
+import {LoadingController} from "@ionic/angular";
 
 @Component({
   selector: 'app-weather',
   templateUrl: './news.page.html',
   styleUrls: ['./news.page.scss'],
   standalone: true,
-  imports: [IonContent, CommonModule, FormsModule, HeaderComponent, IonList, IonItem, IonGrid, IonRow, IonCol, IonSearchbar, IonCard, IonCardContent, IonCardHeader, IonBadge, RouterLink, IonText]
+  imports: [IonContent, CommonModule, FormsModule, HeaderComponent, IonList, IonItem, IonGrid, IonRow, IonCol, IonSearchbar, IonCard, IonCardContent, IonCardHeader, IonBadge, RouterLink, IonText, IonInfiniteScroll, IonInfiniteScrollContent]
 })
 export class NewsPage implements OnInit {
 
   private readonly data: DataService = inject(DataService)
+  private readonly loadingCtrl: LoadingController = inject(LoadingController)
 
   constructor() { }
 
   arrayCityWeather: Ciudade [] = []
   arrayProvinciaWeather: Provincia [] = []
-  filteredProvinciaWeather: Provincia[] = []; // Lista filtrada por el searchbar
+  filteredProvinciaWeather: Provincia[] = [];
+
   searchText: string = '';  // Valor de búsqueda
 
   ngOnInit() {
@@ -54,23 +57,29 @@ export class NewsPage implements OnInit {
     })
   }
 
+  async loadProvinciaWeather() {
 
-  // Cargar los datos de las provincias
-  loadProvinciaWeather() {
+     const loading = await this.loadingCtrl.create({
+       message: 'Loading...',
+       spinner: 'bubbles'
+     })
+
+    await loading.present();
+
     this.data.getWeather().subscribe(value => {
+      loading.dismiss();
       this.arrayProvinciaWeather = value.provincias;
-      this.filteredProvinciaWeather = value.provincias;  // Inicializamos la lista filtrada con todos los elementos
+      this.filteredProvinciaWeather = value.provincias;
     });
   }
 
-  // Método para filtrar los datos según el texto de búsqueda
   filterProvincias(event: any) {
     const searchTerm = event.target.value.toLowerCase();
 
-    // Filtrar por el nombre de la provincia o la comunidad autónoma
     this.filteredProvinciaWeather = this.arrayProvinciaWeather.filter(provincia =>
       provincia.CAPITAL_PROVINCIA.toLowerCase().includes(searchTerm) ||
       provincia.COMUNIDAD_CIUDAD_AUTONOMA.toLowerCase().includes(searchTerm)
     );
 }
+
 }

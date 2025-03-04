@@ -4,18 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87f09b7f-afdb-4eb2-af7e-76fe03092743" name="Changes" comment="paginas de guides creadas y funcionales empezamos con los bugs de firebase">
+    <list default="true" id="87f09b7f-afdb-4eb2-af7e-76fe03092743" name="Changes" comment="todo list terminado, logbook terminado, empezando a crear la parte de meets">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/astro/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/app.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/astro/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/app.routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro/src/app/component/menu/menu.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/component/menu/menu.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro/src/app/common/weatherApp.ts" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/common/weatherApp.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/astro/src/app/pages/details-weather/details-weather.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/pages/details-weather/details-weather.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro/src/app/pages/details-weather/details-weather.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/pages/details-weather/details-weather.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro/src/app/pages/login/login.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/pages/login/login.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro/src/app/pages/login/login.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/pages/login/login.page.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/astro/src/app/pages/login/login.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/pages/login/login.page.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/astro/src/app/pages/meet-up/meet-up.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/pages/meet-up/meet-up.page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/astro/src/app/pages/meet-up/meet-up.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/pages/meet-up/meet-up.page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro/src/app/pages/personal/personal.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/pages/personal/personal.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro/src/app/pages/personal/personal.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/pages/personal/personal.page.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro/src/app/pages/personal/personal.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/pages/personal/personal.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro/src/app/pages/pollution/pollution.page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro/src/app/pages/pollution/pollution.page.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro/src/app/pages/pollution/pollution.page.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro/src/app/pages/register/register.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/pages/register/register.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro/src/app/pages/register/register.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/pages/register/register.page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro/src/app/pages/register/register.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/pages/register/register.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro/src/app/pages/tabs/tabs.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/pages/tabs/tabs.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro/src/app/pages/weather/news.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/pages/weather/news.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro/src/app/pages/weather/news.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/pages/weather/news.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro/src/assets/data/culturas.json" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/assets/data/culturas.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro/src/assets/data/planetas.json" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/assets/data/planetas.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +140,15 @@
       <workItem from="1740392878744" duration="4432000" />
       <workItem from="1740479721880" duration="17452000" />
       <workItem from="1740568573624" duration="9636000" />
-      <workItem from="1740592252546" duration="3959000" />
+      <workItem from="1740592252546" duration="4045000" />
+      <workItem from="1740655347708" duration="6735000" />
+      <workItem from="1740856979937" duration="4568000" />
+      <workItem from="1741024764996" duration="1192000" />
+      <workItem from="1741026021388" duration="843000" />
+      <workItem from="1741026906332" duration="645000" />
+      <workItem from="1741027675273" duration="8829000" />
+      <workItem from="1741088287502" duration="12820000" />
+      <workItem from="1741119272415" duration="3099000" />
     </task>
     <task id="LOCAL-00001" summary="pagina de profile creada empezamos con firebase realtime">
       <option name="closed" value="true" />
@@ -147,7 +166,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740396376559</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="todo list terminado, logbook terminado, empezando a crear la parte de meets">
+      <option name="closed" value="true" />
+      <created>1740596297289</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1740596297289</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,6 +184,7 @@
     <MESSAGE value="rutas modificadas, creacion de nuevas paginas" />
     <MESSAGE value="pagina de profile creada empezamos con firebase realtime" />
     <MESSAGE value="paginas de guides creadas y funcionales empezamos con los bugs de firebase" />
-    <option name="LAST_COMMIT_MESSAGE" value="paginas de guides creadas y funcionales empezamos con los bugs de firebase" />
+    <MESSAGE value="todo list terminado, logbook terminado, empezando a crear la parte de meets" />
+    <option name="LAST_COMMIT_MESSAGE" value="todo list terminado, logbook terminado, empezando a crear la parte de meets" />
   </component>
 </project>

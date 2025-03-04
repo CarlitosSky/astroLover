@@ -41,8 +41,8 @@ private readonly router:Router = inject(Router)
 
   register() {
 
-    if (this.gUser == "" ){
-      this.toastService.loadToast("user required", 2000, 'danger')
+    if (this.account.Email == "" ){
+      this.toastService.loadToast("Mail required", 2000, 'danger')
     }else  if (this.gRepeat != this.account.Password) {
       this.toastService.loadToast("Password don't match", 2000, 'danger')
     }else if (this.gCheck == false) {
@@ -53,7 +53,7 @@ private readonly router:Router = inject(Router)
       .then((userCredential) => {
         // Signed up
         const user = userCredential.user;
-        this.router.navigateByUrl("/tabs/weather")
+        this.router.navigateByUrl("/tabs/personal")
         this.toastService.loadToast("User created succesfully", 2000, 'success')
         console.log(user)
       })

@@ -1,28 +1,28 @@
 export interface Welcome {
-  origen:          Origen;
-  title:           string;
-  ciudades:        Ciudade[];
-  today:           Today;
-  tomorrow:        Today;
-  provincias:      Provincia[];
-  breadcrumb:      any[];
+  origen: Origen;
+  title: string;
+  ciudades: Ciudade[];
+  today: Today;
+  tomorrow: Today;
+  provincias: Provincia[];
+  breadcrumb: any[];
   metadescripcion: string;
-  keywords:        string;
+  keywords: string;
 }
 
 export interface Ciudade {
-  id:           string;
-  idProvince:   string;
-  name:         string;
+  id: string;
+  idProvince: string;
+  name: string;
   nameProvince: string;
-  stateSky:     StateSky;
+  stateSky: StateSky;
   temperatures: Temperatures;
   provincia: Provincia[];
 }
 
 export interface StateSky {
   description: string;
-  id:          string;
+  id: string;
 }
 
 export interface Temperatures {
@@ -31,20 +31,20 @@ export interface Temperatures {
 }
 
 export interface Origen {
-  productor:   string;
-  web:         string;
-  language:    string;
-  copyright:   string;
-  nota_legal:  string;
+  productor: string;
+  web: string;
+  language: string;
+  copyright: string;
+  nota_legal: string;
   descripcion: string;
 }
 
 export interface Provincia {
-  CODPROV:                   string;
-  NOMBRE_PROVINCIA:          string;
-  CODAUTON:                  string;
+  CODPROV: string;
+  NOMBRE_PROVINCIA: string;
+  CODAUTON: string;
   COMUNIDAD_CIUDAD_AUTONOMA: string;
-  CAPITAL_PROVINCIA:         string;
+  CAPITAL_PROVINCIA: string;
   // ciudad: Ciudade[];
 }
 
@@ -53,13 +53,13 @@ export interface Today {
 }
 
 export interface APODAPI {
-  date:            Date;
-  explanation:     string;
-  hdurl:           string;
-  media_type:      string;
+  date: Date;
+  explanation: string;
+  hdurl: string;
+  media_type: string;
   service_version: string;
-  title:           string;
-  url:             string;
+  title: string;
+  url: string;
 }
 
 export interface RoverPhotos {
@@ -67,18 +67,18 @@ export interface RoverPhotos {
 }
 
 export interface Photo {
-  id:         number;
-  sol:        number;
-  camera:     Camera;
-  img_src:    string;
+  id: number;
+  sol: number;
+  camera: Camera;
+  img_src: string;
   earth_date: Date;
-  rover:      Rover;
+  rover: Rover;
 }
 
 export interface Camera {
-  id:        number;
-  name:      CameraName;
-  rover_id:  number;
+  id: number;
+  name: CameraName;
+  rover_id: number;
   full_name: FullName;
 }
 
@@ -99,11 +99,11 @@ export enum CameraName {
 }
 
 export interface Rover {
-  id:           number;
-  name:         RoverName;
+  id: number;
+  name: RoverName;
   landing_date: Date;
-  launch_date:  Date;
-  status:       Status;
+  launch_date: Date;
+  status: Status;
 }
 
 export enum RoverName {
@@ -116,21 +116,23 @@ export enum Status {
 
 export interface Galaxias {
   id: string;
-  nombre:      string;
+  nombre: string;
   descripcion: string;
-  foto:        string;
+  foto: string;
 }
 
 export interface Planets {
-  nombre:      string;
+  id: string;
+  nombre: string;
   descripcion: string;
-  foto:        string;
+  foto: string;
 }
 
 export interface Cultures {
-  nombre:      string;
+  id:string;
+  nombre: string;
   descripcion: string;
-  foto:        string;
+  foto: string;
 }
 
 

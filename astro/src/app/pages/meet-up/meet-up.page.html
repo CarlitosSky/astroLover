@@ -8,7 +8,7 @@
         <ion-button (click)="btnLoadAllMeets()">All meets</ion-button>
       </ion-col>
 
-      <ion-col>
+      <ion-col class="ion-justify-content-center ion-align-items-center" style="display: flex">
         <ion-button (click)="btnLoadMyMeets()">My meets</ion-button>
       </ion-col>
     </ion-row>
@@ -17,8 +17,7 @@
 
       @if (myMeetsBollean) {
         <ion-col>
-          @for (meet of todos; track $index) {
-
+          @for (meet of visibleTodos; track $index) {
 
             <ion-card>
               <ion-card-header>
@@ -46,6 +45,233 @@
                     </ion-col>
                   </ion-row>
 
+                  <ion-row>
+                    <ion-col class="ion-justify-content-center ion-align-items-center" style="display: flex">
+                      <ion-button fill="none" [id]="'ab'+meet.id">
+                        <ion-icon name="create"></ion-icon>
+                      </ion-button>
+                      <ion-button fill="none" (click)="delete(meet.id)">
+                        <ion-icon name="trash"></ion-icon>
+                      </ion-button>
+
+                      <ion-button fill="none" [id]="'ver'+meet.id">
+                        <ion-icon name="eye"></ion-icon>
+                      </ion-button>
+
+
+                      <ion-modal #modalito [trigger]="'ver'+meet.id"
+                                 style="height: 80%; margin-top: 10%; width: 100%; border-radius: 30px;">
+                        <ng-template>
+                          <ion-header>
+
+                            <ion-toolbar class="ion-text-center">
+                              <ion-text>{{ meet.title }}
+                              </ion-text>
+
+                              <ion-buttons slot="start" class="ion-margin-start">
+                                <ion-button (click)="modalito.dismiss()">
+                                  <ion-icon name="arrow-back"></ion-icon>
+                                </ion-button>
+                              </ion-buttons>
+
+                            </ion-toolbar>
+
+                          </ion-header>
+
+                          <ion-content class="ion-padding ion-margin-top">
+
+                            <ion-grid>
+
+                              <ion-row>
+                                <ion-col class="ion-text-center">
+                                  <ion-img [src]="meet.img" style="height: 150px; width: 100%"></ion-img>
+                                </ion-col>
+                              </ion-row>
+
+                              <ion-row>
+                                <ion-col class="ion-text-center">
+                                  <ion-text>Description: {{meet.description}}</ion-text>
+                                </ion-col>
+                              </ion-row>
+
+                              <ion-row>
+                                <ion-col class="ion-text-center">
+                                  <ion-text>Site: {{meet.site}}</ion-text>
+                                </ion-col>
+                              </ion-row>
+
+                              <ion-row>
+                                <ion-col class="ion-text-center">
+                                  <ion-text>Date: {{meet.date}}</ion-text>
+                                </ion-col>
+                              </ion-row>
+
+                              <ion-row>
+                                <ion-col class="ion-text-center">
+                                  <ion-text>Hour: {{meet.hour}}</ion-text>
+                                </ion-col>
+                              </ion-row>
+
+                              <ion-row>
+                                <ion-col class="ion-text-center">
+                                  <ion-text>Participants: {{meet.participants_count}}</ion-text>
+                                </ion-col>
+                              </ion-row>
+                            </ion-grid>
+                          </ion-content>
+                        </ng-template>
+                      </ion-modal>
+
+
+                      <ion-modal #editModal [trigger]="'ab'+meet.id"
+                                 style="height: 600px; width: 100%; margin-top: 150px; border-radius: 30px">
+
+                        <ng-template>
+                          <ion-content>
+                            <ion-card>
+                              <ion-card-header>
+                                <ion-toolbar class="ion-text-center">
+                                  <ion-buttons slot="start" class="ion-margin-start">
+                                    <ion-button (click)="editModal.dismiss()">
+                                      <ion-icon name="arrow-back"></ion-icon>
+                                    </ion-button>
+                                  </ion-buttons>
+                                  <ion-text>Edit a Meet</ion-text>
+                                </ion-toolbar>
+                              </ion-card-header>
+
+                              <ion-card-content class="ion-padding ion-margin-top">
+
+                                <ion-grid>
+
+                                  <!--    form-->
+
+                                  <ion-row style="">
+                                    <ion-col class="ion-justify-content-center ion-align-items-center"
+                                             style="display: flex">
+                                      <ion-list style="background: transparent">
+                                        <ion-item>
+                                          <ion-input labelPlacement="floating" placeholder="tittle" type="tittle"
+                                                     [clearInput]="true" [(ngModel)]="meet.title">
+                                            <div slot="label">Tittle
+                                              <ion-text color="danger">(Required)</ion-text>
+                                            </div>
+                                          </ion-input>
+                                        </ion-item>
+                                      </ion-list>
+                                    </ion-col>
+                                  </ion-row>
+
+
+                                  <ion-row>
+                                    <ion-col class="ion-justify-content-center ion-align-items-center"
+                                             style="display: flex">
+                                      <ion-list style="background: transparent">
+                                        <ion-item>
+                                          <ion-input labelPlacement="floating" placeholder="Description"
+                                                     [clearInput]="true" [(ngModel)]="meet.description">
+                                            <div slot="label">Description
+                                              <ion-text color="danger">(Required)</ion-text>
+                                            </div>
+                                          </ion-input>
+                                        </ion-item>
+                                      </ion-list>
+                                    </ion-col>
+                                  </ion-row>
+
+                                  <ion-row>
+                                    <ion-col class="ion-justify-content-center ion-align-items-center"
+                                             style="display: flex">
+                                      <ion-list style="background: transparent">
+                                        <ion-item>
+                                          <ion-input labelPlacement="floating" placeholder="Url"
+                                                     [clearInput]="true" [(ngModel)]="meet.img">
+                                            <div slot="label">Url img
+                                              <ion-text color="danger">(Required)</ion-text>
+                                            </div>
+                                          </ion-input>
+                                        </ion-item>
+                                      </ion-list>
+                                    </ion-col>
+                                  </ion-row>
+
+                                  <ion-row>
+                                    <ion-col class="ion-justify-content-center ion-align-items-center"
+                                             style="display: flex">
+                                      <ion-list style="background: transparent">
+                                        <ion-item>
+                                          <ion-input labelPlacement="floating" placeholder="site"
+                                                     [clearInput]="true" [(ngModel)]="meet.site">
+                                            <div slot="label">Site
+                                              <ion-text color="danger">(Required)</ion-text>
+                                            </div>
+                                          </ion-input>
+                                        </ion-item>
+                                      </ion-list>
+                                    </ion-col>
+                                  </ion-row>
+
+                                  <ion-row>
+                                    <ion-col class="ion-justify-content-center ion-align-items-center"
+                                             style="display: flex">
+                                      <ion-list style="background: transparent">
+                                        <ion-item>
+                                          <ion-input labelPlacement="floating" placeholder="Date"
+                                                     [clearInput]="true" [(ngModel)]="meet.date">
+                                            <div slot="label">Date
+                                              <ion-text color="danger">(Required)</ion-text>
+                                            </div>
+                                          </ion-input>
+                                        </ion-item>
+                                      </ion-list>
+                                    </ion-col>
+                                  </ion-row>
+
+                                  <ion-row>
+                                    <ion-col class="ion-justify-content-center ion-align-items-center"
+                                             style="display: flex">
+                                      <ion-list style="background: transparent">
+                                        <ion-item>
+                                          <ion-input labelPlacement="floating" placeholder="Url"
+                                                     [clearInput]="true" [(ngModel)]="meet.hour">
+                                            <div slot="label">Hour
+                                              <ion-text color="danger">(Required)</ion-text>
+                                            </div>
+                                          </ion-input>
+                                        </ion-item>
+                                      </ion-list>
+                                    </ion-col>
+                                  </ion-row>
+
+                                  <!--form-->
+
+                                  <ion-row class="ion-margin-top">
+                                    <ion-col class="ion-justify-content-center ion-align-items-center"
+                                             style="display: flex">
+                                      <ion-buttons>
+                                        <ion-button shape="round" class="btnLogin" (click)="updateTodo(meet); editModal.dismiss()">
+                                          <h1>Update Meet</h1>
+                                        </ion-button>
+                                      </ion-buttons>
+
+                                    </ion-col>
+                                  </ion-row>
+
+
+                                </ion-grid>
+
+                              </ion-card-content>
+
+
+                            </ion-card>
+                          </ion-content>
+                        </ng-template>
+
+                      </ion-modal>
+
+                    </ion-col>
+                  </ion-row>
+
                 </ion-grid>
 
 
@@ -56,6 +282,134 @@
 
           }
         </ion-col>
+
+      } @else if (allMeetsBollean){
+
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <ion-searchbar/>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col>
+
+              @for (all of visibleTodos; track $index){
+                <ion-card [id]="'mov'+all.id">
+                  <ion-card-header>
+                    <ion-img [src]="all.img" style="height: 150px; width: 100%"></ion-img>
+                  </ion-card-header>
+
+                  <ion-card-content>
+
+                    <ion-grid>
+                      <ion-row>
+                        <ion-col class="ion-justify-content-center ion-align-items-center" style="display: flex">
+                          <ion-text>
+                            {{all.title}}
+                          </ion-text>
+                        </ion-col>
+                      </ion-row>
+
+                      <ion-row>
+                        <ion-col class="ion-justify-content-center ion-align-items-center" style="display: flex">
+                          <ion-text>
+                            {{all.site}}
+                          </ion-text>
+                        </ion-col>
+                      </ion-row>
+
+                    </ion-grid>
+
+                  </ion-card-content>
+
+                </ion-card>
+
+
+                <ion-modal #modalver [trigger]="'mov'+all.id" style="height: 80%; margin-top: 10%; width: 100%; border-radius: 30px">
+
+                    <ng-template>
+                      <ion-content>
+                        <ion-card>
+                          <ion-card-header>
+                            <ion-toolbar class="ion-text-center">
+                              <ion-text>{{ all.title }}
+                              </ion-text>
+
+                              <ion-buttons slot="start" class="ion-margin-start">
+                                <ion-button (click)="modalver.dismiss()">
+                                  <ion-icon name="arrow-back"></ion-icon>
+                                </ion-button>
+                              </ion-buttons>
+
+                            </ion-toolbar>
+                          </ion-card-header>
+
+                          <ion-card-content>
+                            <ion-grid>
+                              <ion-row>
+                                <ion-col>
+                                  <ion-img [src]="all.img"></ion-img>
+                                </ion-col>
+                              </ion-row>
+
+                              <ion-row>
+                                <ion-col class="ion-justify-content-center ion-align-items-center" style="display: flex">
+                                  <ion-text>{{all.description}}</ion-text>
+                                </ion-col>
+                              </ion-row>
+
+                              <ion-row>
+                                <ion-col class="ion-justify-content-center ion-align-items-center" style="display: flex">
+                                  <ion-text>Site: {{all.site}}</ion-text>
+                                </ion-col>
+
+                                <ion-col class="ion-justify-content-center ion-align-items-center" style="display: flex">
+                                  <ion-text>Hour: {{all.hour}}</ion-text>
+                                </ion-col>
+                              </ion-row>
+
+                              <ion-row>
+                                <ion-col class="ion-justify-content-center ion-align-items-center" style="display: flex">
+                                  <ion-text>{{all.date}}</ion-text>
+                                </ion-col>
+                              </ion-row>
+
+                              <ion-row>
+                                <ion-col class="ion-justify-content-center ion-align-items-center" style="display: flex">
+                                  <ion-text>Participants : {{all.participants_count}}</ion-text>
+                                </ion-col>
+                              </ion-row>
+
+                              <ion-row>
+                                <ion-col class="ion-justify-content-center ion-align-items-center" style="display: flex">
+                                  <ion-button
+                                    (click)="participar(all)" >
+
+                                  {{ currentUser?.uid === all.userId ? 'userId' :
+                                    all.participants?.includes(currentUser?.uid) ? 'Abandonar' : 'Unirse'}}
+
+                                  </ion-button>
+                                </ion-col>
+                              </ion-row>
+
+                            </ion-grid>
+                          </ion-card-content>
+
+                        </ion-card>
+                      </ion-content>
+                    </ng-template>
+
+                </ion-modal>
+
+              }
+
+            </ion-col>
+          </ion-row>
+
+        </ion-grid>
+
       }
 
     </ion-row>
@@ -65,13 +419,13 @@
   <!--  add here-->
 
   <ion-fab horizontal="end" vertical="bottom" slot="fixed">
-    <ion-fab-button id="abrirTodo">
+    <ion-fab-button id="abrirTodo3">
       <ion-icon name="add">
       </ion-icon>
     </ion-fab-button>
   </ion-fab>
 
-  <ion-modal #modalClose [trigger]="'abrirTodo'"
+  <ion-modal #modalClose [trigger]="'abrirTodo3'"
              style="height: 600px; width: 100%; margin-top: 150px; border-radius: 30px">
 
     <ng-template>
@@ -116,6 +470,7 @@
                                  [clearInput]="true"
                                  [(ngModel)]="myMeet.description">
                         <div slot="label">Description
+                          <ion-text color="danger">(Required)</ion-text>
                         </div>
                       </ion-input>
                     </ion-item>
@@ -130,6 +485,7 @@
                       <ion-input labelPlacement="floating" placeholder="Date" type="position" [clearInput]="true"
                                  [(ngModel)]="myMeet.date">
                         <div slot="label">Date
+                          <ion-text color="danger">(Required)</ion-text>
                         </div>
                       </ion-input>
                     </ion-item>
@@ -145,6 +501,7 @@
                                  [clearInput]="true"
                                  [(ngModel)]="myMeet.site">
                         <div slot="label">Site
+                          <ion-text color="danger">(Required)</ion-text>
                         </div>
                       </ion-input>
                     </ion-item>
@@ -160,6 +517,7 @@
                       <ion-input labelPlacement="floating" placeholder="12:00" type="position" [clearInput]="true"
                                  [(ngModel)]="myMeet.hour">
                         <div slot="label">Hour
+                          <ion-text color="danger">(Required)</ion-text>
                         </div>
                       </ion-input>
                     </ion-item>
@@ -174,6 +532,7 @@
                       <ion-input labelPlacement="floating" placeholder="Image url" type="position" [clearInput]="true"
                                  [(ngModel)]="myMeet.img">
                         <div slot="label">Image
+                          <ion-text color="danger">(Required)</ion-text>
                         </div>
                       </ion-input>
                     </ion-item>
@@ -186,7 +545,7 @@
               <ion-row class="ion-margin-top">
                 <ion-col class="ion-justify-content-center ion-align-items-center" style="display: flex">
                   <ion-buttons>
-                    <ion-button shape="round" class="btnLogin" (click)="addTodo();">
+                    <ion-button shape="round" class="btnLogin" (click)="addTodo(); modalClose.dismiss()">
                       <h1>Create logBook</h1>
                     </ion-button>
                   </ion-buttons>
@@ -201,5 +560,10 @@
     </ng-template>
 
   </ion-modal>
+
+  <ion-infinite-scroll threshold="150px" (ionInfinite)="loadData($event)">
+    <ion-infinite-scroll-content loading-spinner="crescent" loading-text="Loading more..."/>
+  </ion-infinite-scroll>
+
 
 </ion-content>
