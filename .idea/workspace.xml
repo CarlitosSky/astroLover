@@ -4,29 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87f09b7f-afdb-4eb2-af7e-76fe03092743" name="Changes" comment="todo list terminado, logbook terminado, empezando a crear la parte de meets">
+    <list default="true" id="87f09b7f-afdb-4eb2-af7e-76fe03092743" name="Changes" comment="[Add] pagina de curiosidades,pagina de peso segun el planeta, todas las paginas ya deben cargar al entrar primero, todas ya tienen infinite scroll, formularios con requirimientos minimos added, correcion de bugs">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/app.routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro/src/app/common/weatherApp.ts" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/common/weatherApp.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro/src/app/pages/details-weather/details-weather.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/pages/details-weather/details-weather.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro/src/app/pages/details-weather/details-weather.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/pages/details-weather/details-weather.page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro/src/app/pages/login/login.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/pages/login/login.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro/src/app/pages/login/login.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/pages/login/login.page.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro/src/app/pages/login/login.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/pages/login/login.page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro/src/app/pages/meet-up/meet-up.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/pages/meet-up/meet-up.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro/src/app/pages/meet-up/meet-up.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/pages/meet-up/meet-up.page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro/src/app/pages/pollution/pollution.page.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro/src/app/pages/pollution/pollution.page.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro/src/app/pages/pollution/pollution.page.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro/src/app/pages/register/register.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/pages/register/register.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro/src/app/pages/register/register.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/pages/register/register.page.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro/src/app/pages/register/register.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/pages/register/register.page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro/src/app/pages/tabs/tabs.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/pages/tabs/tabs.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro/src/app/pages/weather/news.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/pages/weather/news.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro/src/app/pages/weather/news.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/pages/weather/news.page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro/src/assets/data/culturas.json" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/assets/data/culturas.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro/src/assets/data/planetas.json" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/assets/data/planetas.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +24,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/backend_astro/backend-astro" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -72,24 +54,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/carlo/WebstormProjects/astroLover/astro/src/assets&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.inline.completion&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\carlo\\WebstormProjects\\astroLover\\astro\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/carlo/WebstormProjects/astroLover/astro/src/assets",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editor.preferences.inline.completion",
+    "ts.external.directory.path": "C:\\Users\\carlo\\WebstormProjects\\astroLover\\backend_astro\\backend-astro\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\carlo\WebstormProjects\astroLover\astro\src\assets" />
@@ -148,7 +130,9 @@
       <workItem from="1741026906332" duration="645000" />
       <workItem from="1741027675273" duration="8829000" />
       <workItem from="1741088287502" duration="12820000" />
-      <workItem from="1741119272415" duration="3099000" />
+      <workItem from="1741119272415" duration="3934000" />
+      <workItem from="1741182176677" duration="337000" />
+      <workItem from="1741182541536" duration="631000" />
     </task>
     <task id="LOCAL-00001" summary="pagina de profile creada empezamos con firebase realtime">
       <option name="closed" value="true" />
@@ -174,7 +158,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740596297289</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="[Add] pagina de curiosidades,pagina de peso segun el planeta, todas las paginas ya deben cargar al entrar primero, todas ya tienen infinite scroll, formularios con requirimientos minimos added, correcion de bugs">
+      <option name="closed" value="true" />
+      <created>1741122490665</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1741122490665</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,6 +177,7 @@
     <MESSAGE value="pagina de profile creada empezamos con firebase realtime" />
     <MESSAGE value="paginas de guides creadas y funcionales empezamos con los bugs de firebase" />
     <MESSAGE value="todo list terminado, logbook terminado, empezando a crear la parte de meets" />
-    <option name="LAST_COMMIT_MESSAGE" value="todo list terminado, logbook terminado, empezando a crear la parte de meets" />
+    <MESSAGE value="[Add] pagina de curiosidades,pagina de peso segun el planeta, todas las paginas ya deben cargar al entrar primero, todas ya tienen infinite scroll, formularios con requirimientos minimos added, correcion de bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Add] pagina de curiosidades,pagina de peso segun el planeta, todas las paginas ya deben cargar al entrar primero, todas ya tienen infinite scroll, formularios con requirimientos minimos added, correcion de bugs" />
   </component>
 </project>
