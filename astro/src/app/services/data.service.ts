@@ -1,8 +1,18 @@
 import {inject, Injectable} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
-import {APODAPI, Cultures, Galaxias, Planets, Provincia, RoverPhotos, Welcome} from "../common/weatherApp";
+import {
+  APODAPI,
+  Cultures,
+  Galaxias,
+  Planets,
+  Provincia,
+  RoverPhotos,
+  SurvivedTime,
+  Welcome
+} from "../common/weatherApp";
 import {environment} from "../../environments/environment";
+import { map } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -40,6 +50,19 @@ export class DataService {
   getCultures():Observable<Cultures[]> {
     return this.http.get<Cultures[]>('/assets/data/culturas.json')
   }
+
+  getSurvivedTime():Observable<SurvivedTime[]> {
+    return this.http.get< {data: SurvivedTime[]}>(environment.api_survived).pipe(
+      map(response => response.data)
+    );
+  }
+
+  getSurvivedTimeById(id:string):Observable<SurvivedTime> {
+    return this.http.get< {status: string , data: SurvivedTime}>(environment.api_survived+'one/'+id).pipe(
+      map(response => response.data)
+    );
+  }
+
 
 
 

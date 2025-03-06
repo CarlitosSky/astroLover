@@ -4,6 +4,10 @@
 
 export const environment = {
   production: false,
+
+  api_survived: "http://localhost:3003/api/v1/survived/",
+
+
   urlapiWeather: "https://www.el-tiempo.net/api/json/v2/home",
   firebase: {
     apiKey: "AIzaSyAE0rVhD2hmCSDFyWDCa023IzrsLkGbd4s",
@@ -15,3 +19,6 @@ export const environment = {
   },
   apiKey: "bUfmvjnghdMgRS7TWyOGoRFoJAgVAzdCqo5WWgMQ"
 };
+
+
+

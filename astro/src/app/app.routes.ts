@@ -100,7 +100,17 @@ export const routes: Routes = [
         path: 'calcule-weight',
         loadComponent: () => import('./pages/calcule-weight/calcule-weight.page').then( m => m.CalculeWeightPage)
       },
+      {
+        path: 'survived',
+        loadComponent: () => import('./pages/survived/survived.page').then( m => m.SurvivedPage)
+      },
+      {
+        path: 'survived-detail/:id',
+        loadComponent: () => import('./pages/survived-detail/survived-detail.page').then( m => m.SurvivedDetailPage)
+      },
     ]
   },
+
+
 
 ];

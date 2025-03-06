@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87f09b7f-afdb-4eb2-af7e-76fe03092743" name="Changes" comment="[Add] pagina de curiosidades,pagina de peso segun el planeta, todas las paginas ya deben cargar al entrar primero, todas ya tienen infinite scroll, formularios con requirimientos minimos added, correcion de bugs">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="87f09b7f-afdb-4eb2-af7e-76fe03092743" name="Changes" comment="Empezamos a crear el backend con mongoose y nestjs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/app.routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro/src/app/common/weatherApp.ts" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/common/weatherApp.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro/src/app/services/data.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/services/data.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/environments/environment.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +25,8 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/backend_astro/backend-astro" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -54,24 +56,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/carlo/WebstormProjects/astroLover/astro/src/assets",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editor.preferences.inline.completion",
-    "ts.external.directory.path": "C:\\Users\\carlo\\WebstormProjects\\astroLover\\backend_astro\\backend-astro\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/carlo/WebstormProjects/astroLover/astro/src/assets&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.inline.completion&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\carlo\\WebstormProjects\\astroLover\\backend_astro\\backend-astro\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\carlo\WebstormProjects\astroLover\astro\src\assets" />
@@ -132,7 +134,10 @@
       <workItem from="1741088287502" duration="12820000" />
       <workItem from="1741119272415" duration="3934000" />
       <workItem from="1741182176677" duration="337000" />
-      <workItem from="1741182541536" duration="631000" />
+      <workItem from="1741182541536" duration="690000" />
+      <workItem from="1741260643227" duration="1543000" />
+      <workItem from="1741262276207" duration="852000" />
+      <workItem from="1741282404090" duration="7593000" />
     </task>
     <task id="LOCAL-00001" summary="pagina de profile creada empezamos con firebase realtime">
       <option name="closed" value="true" />
@@ -166,7 +171,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741122490665</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Empezamos a crear el backend con mongoose y nestjs">
+      <option name="closed" value="true" />
+      <created>1741183205991</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1741183205991</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,6 +191,7 @@
     <MESSAGE value="paginas de guides creadas y funcionales empezamos con los bugs de firebase" />
     <MESSAGE value="todo list terminado, logbook terminado, empezando a crear la parte de meets" />
     <MESSAGE value="[Add] pagina de curiosidades,pagina de peso segun el planeta, todas las paginas ya deben cargar al entrar primero, todas ya tienen infinite scroll, formularios con requirimientos minimos added, correcion de bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Add] pagina de curiosidades,pagina de peso segun el planeta, todas las paginas ya deben cargar al entrar primero, todas ya tienen infinite scroll, formularios con requirimientos minimos added, correcion de bugs" />
+    <MESSAGE value="Empezamos a crear el backend con mongoose y nestjs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Empezamos a crear el backend con mongoose y nestjs" />
   </component>
 </project>

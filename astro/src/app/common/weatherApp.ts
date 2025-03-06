@@ -135,5 +135,15 @@ export interface Cultures {
   foto: string;
 }
 
+export interface SurvivedTime {
+
+  _id:string
+  name:string
+  photo:string
+  time:string
+  description:string
+
+}
+
 
 
