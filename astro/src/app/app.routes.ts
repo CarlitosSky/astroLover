@@ -108,9 +108,19 @@ export const routes: Routes = [
         path: 'survived-detail/:id',
         loadComponent: () => import('./pages/survived-detail/survived-detail.page').then( m => m.SurvivedDetailPage)
       },
+      {
+        path: 'astronauts',
+        loadComponent: () => import('./pages/astronauts/astronauts.page').then( m => m.AstronautsPage)
+      },
+      {
+        path: 'astronomers',
+        loadComponent: () => import('./pages/astronomers/astronomers.page').then( m => m.AstronomersPage)
+      },
+      {
+        path: 'astronomer-detail/:id',
+        loadComponent: () => import('./pages/astronomer-detail/astronomer-detail.page').then( m => m.AstronomerDetailPage)
+      },
     ]
   },
-
-
 
 ];

@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
 
-  api_survived: "http://localhost:3003/api/v1/survived/",
+  api_survived: "http://localhost:3003/api/v1/",
 
 
   urlapiWeather: "https://www.el-tiempo.net/api/json/v2/home",

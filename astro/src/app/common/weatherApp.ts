@@ -145,5 +145,20 @@ export interface SurvivedTime {
 
 }
 
+export interface Astronauts {
+  _id:string
+  name:string
+  photo:string
+  description:string
+}
+
+export interface Astronomers {
+  _id:string
+  name:string
+  photo:string
+  nationality:string
+  description:string
+}
+
 
 

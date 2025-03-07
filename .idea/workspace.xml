@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87f09b7f-afdb-4eb2-af7e-76fe03092743" name="Changes" comment="Empezamos a crear el backend con mongoose y nestjs">
+    <list default="true" id="87f09b7f-afdb-4eb2-af7e-76fe03092743" name="Changes" comment="Api creada y pagina de tiempo sobrevivido en segun que planeta completada">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/astro/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/app.routes.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/astro/src/app/common/weatherApp.ts" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/common/weatherApp.ts" afterDir="false" />
@@ -137,7 +137,8 @@
       <workItem from="1741182541536" duration="690000" />
       <workItem from="1741260643227" duration="1543000" />
       <workItem from="1741262276207" duration="852000" />
-      <workItem from="1741282404090" duration="7593000" />
+      <workItem from="1741282404090" duration="11207000" />
+      <workItem from="1741345557284" duration="3841000" />
     </task>
     <task id="LOCAL-00001" summary="pagina de profile creada empezamos con firebase realtime">
       <option name="closed" value="true" />
@@ -179,7 +180,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741183205991</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Api creada y pagina de tiempo sobrevivido en segun que planeta completada">
+      <option name="closed" value="true" />
+      <created>1741290077710</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1741290077710</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,6 +201,7 @@
     <MESSAGE value="todo list terminado, logbook terminado, empezando a crear la parte de meets" />
     <MESSAGE value="[Add] pagina de curiosidades,pagina de peso segun el planeta, todas las paginas ya deben cargar al entrar primero, todas ya tienen infinite scroll, formularios con requirimientos minimos added, correcion de bugs" />
     <MESSAGE value="Empezamos a crear el backend con mongoose y nestjs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Empezamos a crear el backend con mongoose y nestjs" />
+    <MESSAGE value="Api creada y pagina de tiempo sobrevivido en segun que planeta completada" />
+    <option name="LAST_COMMIT_MESSAGE" value="Api creada y pagina de tiempo sobrevivido en segun que planeta completada" />
   </component>
 </project>

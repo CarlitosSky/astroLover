@@ -2,7 +2,7 @@ import {inject, Injectable} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
 import {
-  APODAPI,
+  APODAPI, Astronauts, Astronomers,
   Cultures,
   Galaxias,
   Planets,
@@ -52,13 +52,37 @@ export class DataService {
   }
 
   getSurvivedTime():Observable<SurvivedTime[]> {
-    return this.http.get< {data: SurvivedTime[]}>(environment.api_survived).pipe(
+    return this.http.get< {data: SurvivedTime[]}>(environment.api_survived+'survived/').pipe(
       map(response => response.data)
     );
   }
 
   getSurvivedTimeById(id:string):Observable<SurvivedTime> {
-    return this.http.get< {status: string , data: SurvivedTime}>(environment.api_survived+'one/'+id).pipe(
+    return this.http.get< {status: string , data: SurvivedTime}>(environment.api_survived+'survived/'+'one/'+id).pipe(
+      map(response => response.data)
+    );
+  }
+
+  getAstronauts():Observable<Astronauts[]> {
+    return this.http.get< {data: Astronauts[]}>(environment.api_survived +'astronauts/').pipe(
+      map(response => response.data)
+    );
+  }
+
+  getAstronautsById(id:string):Observable<Astronauts> {
+    return this.http.get< {status: string , data: Astronauts}>(environment.api_survived+'astronauts/'+'one/'+id).pipe(
+      map(response => response.data)
+    );
+  }
+
+  getAstronomers():Observable<Astronomers[]> {
+    return this.http.get< {data: Astronomers[]}>(environment.api_survived +'astronomers/').pipe(
+      map(response => response.data)
+    );
+  }
+
+  getAstronomersById(id:string):Observable<Astronomers> {
+    return this.http.get< {status: string , data: Astronomers}>(environment.api_survived+'astronomers/'+'one/'+id).pipe(
       map(response => response.data)
     );
   }
