@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87f09b7f-afdb-4eb2-af7e-76fe03092743" name="Changes" comment="Api creada y pagina de tiempo sobrevivido en segun que planeta completada">
+    <list default="true" id="87f09b7f-afdb-4eb2-af7e-76fe03092743" name="Changes" comment="pagina de astronomos creada y detalles tambien">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/app.routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro/src/app/common/weatherApp.ts" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/common/weatherApp.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro/src/app/services/data.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/services/data.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/environments/environment.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +134,8 @@
       <workItem from="1741260643227" duration="1543000" />
       <workItem from="1741262276207" duration="852000" />
       <workItem from="1741282404090" duration="11207000" />
-      <workItem from="1741345557284" duration="3841000" />
+      <workItem from="1741345557284" duration="4396000" />
+      <workItem from="1741369686426" duration="1612000" />
     </task>
     <task id="LOCAL-00001" summary="pagina de profile creada empezamos con firebase realtime">
       <option name="closed" value="true" />
@@ -188,7 +185,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741290077710</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="pagina de astronomos creada y detalles tambien">
+      <option name="closed" value="true" />
+      <created>1741349444354</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1741349444355</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,6 +207,7 @@
     <MESSAGE value="[Add] pagina de curiosidades,pagina de peso segun el planeta, todas las paginas ya deben cargar al entrar primero, todas ya tienen infinite scroll, formularios con requirimientos minimos added, correcion de bugs" />
     <MESSAGE value="Empezamos a crear el backend con mongoose y nestjs" />
     <MESSAGE value="Api creada y pagina de tiempo sobrevivido en segun que planeta completada" />
-    <option name="LAST_COMMIT_MESSAGE" value="Api creada y pagina de tiempo sobrevivido en segun que planeta completada" />
+    <MESSAGE value="pagina de astronomos creada y detalles tambien" />
+    <option name="LAST_COMMIT_MESSAGE" value="pagina de astronomos creada y detalles tambien" />
   </component>
 </project>
