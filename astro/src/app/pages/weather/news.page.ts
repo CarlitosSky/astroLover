@@ -27,7 +27,7 @@ import {LoadingController} from "@ionic/angular";
   templateUrl: './news.page.html',
   styleUrls: ['./news.page.scss'],
   standalone: true,
-  imports: [IonContent, CommonModule, FormsModule, HeaderComponent, IonList, IonItem, IonGrid, IonRow, IonCol, IonSearchbar, IonCard, IonCardContent, IonCardHeader, IonBadge, RouterLink, IonText, IonInfiniteScroll, IonInfiniteScrollContent]
+  imports: [IonContent, CommonModule, FormsModule, HeaderComponent, IonList, IonItem, IonGrid, IonRow, IonCol, IonSearchbar, IonCard, IonCardContent, IonCardHeader, IonBadge, RouterLink, IonText, IonInfiniteScroll, IonInfiniteScrollContent, IonTitle]
 })
 export class NewsPage implements OnInit {
 

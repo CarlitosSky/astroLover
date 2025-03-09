@@ -120,7 +120,44 @@ export const routes: Routes = [
         path: 'astronomer-detail/:id',
         loadComponent: () => import('./pages/astronomer-detail/astronomer-detail.page').then( m => m.AstronomerDetailPage)
       },
+      {
+        path: 'solar-detail/:id',
+        loadComponent: () => import('./pages/solar-detail/solar-detail.page').then( m => m.SolarDetailPage)
+      },
+      {
+        path: 'galaxie-detail/:id',
+        loadComponent: () => import('./pages/galaxie-detail/galaxie-detail.page').then( m => m.GalaxieDetailPage)
+      },
+      {
+        path: 'culture-detail/:id',
+        loadComponent: () => import('./pages/culture-detail/culture-detail.page').then( m => m.CultureDetailPage)
+      },
+      {
+        path: 'articles',
+        loadComponent: () => import('./pages/articles/articles.page').then( m => m.ArticlesPage)
+      },
+      {
+        path: 'telescopes',
+        loadComponent: () => import('./pages/telescopes/telescopes.page').then( m => m.TelescopesPage)
+      },
+      {
+        path: 'cameras',
+        loadComponent: () => import('./pages/cameras/cameras.page').then( m => m.CamerasPage)
+      },
+      {
+        path: 'accesories',
+        loadComponent: () => import('./pages/accesories/accesories.page').then( m => m.AccesoriesPage)
+      },
+      {
+        path: 'mounts',
+        loadComponent: () => import('./pages/mounts/mounts.page').then( m => m.MountsPage)
+      },
+      {
+        path: 'acce-detail/:id',
+        loadComponent: () => import('./pages/acce-detail/acce-detail.page').then( m => m.AcceDetailPage)
+      },
     ]
   },
+
 
 ];

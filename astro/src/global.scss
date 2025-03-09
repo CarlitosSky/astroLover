@@ -43,3 +43,32 @@ ion-content.background{
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import '@ionic/angular/css/palettes/dark.system.css';
+
+.light {
+  --ion-background-color: #ffffff;
+  --ion-text-color: #000000;
+  --ion-item-background: #ffffff;
+  color: black;
+}
+
+.dark {
+
+  --ion-background-color: #3c3636;
+  --ion-text-color: #ffffff;
+  --ion-item-background: #4a4a4a;
+    color: white;
+  --ion-card-background: #2c2c2c;
+  --color: #ffffff;
+
+}
+
+.red {
+
+  --ion-color-secondary: #ffffff;
+  --ion-background-color: #da1919;
+  --ion-text-color: #ba6161;
+  --ion-item-background: #333333;
+  color: orangered;
+  --ion-card-background: #ff7a7a;
+
+}

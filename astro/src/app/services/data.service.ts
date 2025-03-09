@@ -2,7 +2,7 @@ import {inject, Injectable} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
 import {
-  APODAPI, Astronauts, Astronomers,
+  APODAPI, Articles, Astronauts, Astronomers,
   Cultures,
   Galaxias,
   Planets,
@@ -39,17 +39,37 @@ export class DataService {
     return this.http.get<RoverPhotos>("https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key="+environment.apiKey)
   }
 
-  getGalaxies():Observable<Galaxias[]> {
-    return this.http.get<Galaxias[]>('/assets/data/galaxias.json')
+  getGalaxias():Observable<Galaxias[]> {
+    return this.http.get<{data: Galaxias[]}>(environment.api_survived+'galaxies/').pipe(
+      map(response => response.data))
   }
 
+  getGalaxiesById(id:string):Observable<Galaxias> {
+    return this.http.get<{data: Galaxias}>(environment.api_survived+'galaxies/one/'+id).pipe(
+      map(response => response.data))
+  }
+
+
   getPlanets():Observable<Planets[]> {
-    return this.http.get<Planets[]>('/assets/data/planetas.json')
+    return this.http.get<{data: Planets[]}>(environment.api_survived+'planets/').pipe(
+      map(response => response.data))
+  }
+
+  getPlanetsById(id:string):Observable<Planets> {
+    return this.http.get<{data: Planets}>(environment.api_survived+'planets/one/'+id).pipe(
+      map(response => response.data))
   }
 
   getCultures():Observable<Cultures[]> {
-    return this.http.get<Cultures[]>('/assets/data/culturas.json')
+    return this.http.get<{data: Cultures[]}>(environment.api_survived+'cultures/').pipe(
+      map(response => response.data))
   }
+
+  getCulturesById(id:string):Observable<Cultures> {
+    return this.http.get<{data: Cultures}>(environment.api_survived+'cultures/one/'+id).pipe(
+      map(response => response.data))
+  }
+
 
   getSurvivedTime():Observable<SurvivedTime[]> {
     return this.http.get< {data: SurvivedTime[]}>(environment.api_survived+'survived/').pipe(
@@ -87,9 +107,24 @@ export class DataService {
     );
   }
 
+  getArticleByCategory(cat:string):Observable<Articles[]> {
+    return this.http.get<{status:string, data: Articles[]}>(environment.api_survived+'articles/categorieprov/'+cat).pipe(map(response => response.data))
+  }
 
+  getArticleByCategoryById(id:string):Observable<Articles> {
+    return this.http.get<{status:string, data: Articles}>(environment.api_survived+'articles/one/'+id).pipe(map(response => response.data))
+  }
 
+  getOrderByPriceAsc(cat:string):Observable<Articles[]>{
+    return this.http.get<{status:string, data: Articles[]}>(environment.api_survived+'articles/price/asc/'+cat).pipe(map(response => response.data))
+  }
 
+  getOrderByPriceDesc(cat:string):Observable<Articles[]>{
+    return this.http.get<{status:string, data: Articles[]}>(environment.api_survived+'articles/price/desc/'+cat).pipe(map(response => response.data))
+  }
 
+  getSearch(query:string, cate:string):Observable<Articles[]> {
+    return this.http.get<{status:string, data:Articles[]}>(environment.api_survived+'articles/search/'+cate+'?query='+query).pipe(map(response => response.data))
+  }
 
 }

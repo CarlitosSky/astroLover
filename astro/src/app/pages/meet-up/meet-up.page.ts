@@ -70,7 +70,6 @@ export class MeetUpPage implements OnInit {
   };
 
   async ngOnInit() {
-
     this.auth.onAuthStateChanged(user => {
       this.currentUser = user;
     });

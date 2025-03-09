@@ -115,24 +115,24 @@ export enum Status {
 }
 
 export interface Galaxias {
-  id: string;
-  nombre: string;
-  descripcion: string;
-  foto: string;
+  _id: string;
+  name: string;
+  description: string;
+  photo: string;
 }
 
 export interface Planets {
-  id: string;
-  nombre: string;
-  descripcion: string;
-  foto: string;
+  _id: string;
+  name: string;
+  description: string;
+  photo: string;
 }
 
 export interface Cultures {
-  id:string;
-  nombre: string;
-  descripcion: string;
-  foto: string;
+  _id:string;
+  name: string;
+  description: string;
+  photo: string;
 }
 
 export interface SurvivedTime {
@@ -160,5 +160,18 @@ export interface Astronomers {
   description:string
 }
 
+export interface Articles {
+
+  _id:string
+  name: string
+  photos:string[]
+  price: number
+  brand:string
+  type:string
+  model:string
+  category:string
+  description:string
+
+}
 
 
