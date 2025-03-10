@@ -4,20 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87f09b7f-afdb-4eb2-af7e-76fe03092743" name="Changes" comment="">
+    <list default="true" id="87f09b7f-afdb-4eb2-af7e-76fe03092743" name="Changes" comment="api de articulos creada, insertado mas articulos, pagina de accesorios creada">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/app.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/astro/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/app.routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro/src/app/common/weatherApp.ts" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/common/weatherApp.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro/src/app/pages/guides/guides.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/pages/guides/guides.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro/src/app/pages/camera/camera.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/pages/camera/camera.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro/src/app/pages/camera/camera.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/pages/camera/camera.page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro/src/app/pages/camera/camera.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/pages/camera/camera.page.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/astro/src/app/pages/meet-up/meet-up.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/pages/meet-up/meet-up.page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro/src/app/pages/weather/news.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/pages/weather/news.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro/src/app/pages/weather/news.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/pages/weather/news.page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro/src/app/services/data.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/services/data.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro/src/assets/data/culturas.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro/src/assets/data/galaxias.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro/src/assets/data/planetas.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro/src/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/global.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,24 +57,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/carlo/WebstormProjects/Administracion_de_series",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editor.preferences.inline.completion",
-    "ts.external.directory.path": "C:\\Users\\carlo\\WebstormProjects\\astroLover\\backend_astro\\backend-astro\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/carlo/WebstormProjects/Administracion_de_series&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.inline.completion&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\carlo\\WebstormProjects\\astroLover\\backend_astro\\backend-astro\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\carlo\WebstormProjects\astroLover\astro\src\assets" />
@@ -149,7 +142,9 @@
       <workItem from="1741345557284" duration="4396000" />
       <workItem from="1741369686426" duration="10919000" />
       <workItem from="1741393615354" duration="3000" />
-      <workItem from="1741529528939" duration="17041000" />
+      <workItem from="1741529528939" duration="21523000" />
+      <workItem from="1741563579126" duration="881000" />
+      <workItem from="1741627732415" duration="5134000" />
     </task>
     <task id="LOCAL-00001" summary="pagina de profile creada empezamos con firebase realtime">
       <option name="closed" value="true" />
@@ -215,7 +210,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741371348290</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="api de articulos creada, insertado mas articulos, pagina de accesorios creada">
+      <option name="closed" value="true" />
+      <created>1741551938658</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1741551938658</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,6 +234,7 @@
     <MESSAGE value="Api creada y pagina de tiempo sobrevivido en segun que planeta completada" />
     <MESSAGE value="pagina de astronomos creada y detalles tambien" />
     <MESSAGE value="retoques terminados paginas y apis, empezamos con cambiar tema de colores" />
-    <option name="LAST_COMMIT_MESSAGE" value="retoques terminados paginas y apis, empezamos con cambiar tema de colores" />
+    <MESSAGE value="api de articulos creada, insertado mas articulos, pagina de accesorios creada" />
+    <option name="LAST_COMMIT_MESSAGE" value="api de articulos creada, insertado mas articulos, pagina de accesorios creada" />
   </component>
 </project>

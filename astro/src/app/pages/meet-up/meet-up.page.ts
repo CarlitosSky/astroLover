@@ -1,6 +1,6 @@
 import {Component, inject, OnInit, ViewChild} from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import {CommonModule} from '@angular/common';
+import {FormsModule} from '@angular/forms';
 import {
   IonButton, IonButtons, IonCard, IonCardContent, IonCardHeader, IonCheckbox,
   IonCol,
@@ -20,9 +20,9 @@ import {getFirestore} from "firebase/firestore";
 import {environment} from "../../../environments/environment";
 import {collectionGroup, deleteDoc, updateDoc} from "@angular/fire/firestore";
 import {ToastService} from "../../services/toast.service";
-import { Timestamp } from "firebase/firestore";
+import {Timestamp} from "firebase/firestore";
 import firebase from "firebase/compat";
-import { increment, arrayUnion } from "firebase/firestore";
+import {increment, arrayUnion} from "firebase/firestore";
 import index from "eslint-plugin-jsdoc";
 
 interface MeetUp {
@@ -42,8 +42,8 @@ export class MeetUpPage implements OnInit {
 
   public myMeetsBollean: boolean = false
   public allMeetsBollean: boolean = false
-  @ViewChild(IonInfiniteScroll) infinite!:IonInfiniteScroll
-  private readonly toast:ToastService = inject(ToastService)
+  @ViewChild(IonInfiniteScroll) infinite!: IonInfiniteScroll
+  private readonly toast: ToastService = inject(ToastService)
   // Initialize Firebase
   app = initializeApp(environment.firebase);
 
@@ -53,7 +53,8 @@ export class MeetUpPage implements OnInit {
 // Initialize Cloud Firestore and get a reference to the service
   db = getFirestore();
 
-  constructor() { }
+  constructor() {
+  }
 
   todos: any[] = [];
   visibleTodos: any[] = [];
@@ -88,7 +89,7 @@ export class MeetUpPage implements OnInit {
     this.allMeetsBollean = true
     try {
 
-      const todosRef = collectionGroup(this.db,"meets");
+      const todosRef = collectionGroup(this.db, "meets");
       const querySnapshot = await getDocs(todosRef);
 
       // const querySnapshot = await getDocs(collectionGroup(this.db, 'meets'));
@@ -113,11 +114,11 @@ export class MeetUpPage implements OnInit {
         });
       });
 
-      this.visibleTodos = this.todos.splice(0,6)
+      this.visibleTodos = this.todos.splice(0, 6)
 
       console.log('muuuuaaaaa')
       this.toast.loadToast("Meet-ups cargados", 2000, 'success');
-    } catch (e:any) {
+    } catch (e: any) {
       console.error("Error cargando meet-ups:", e);
       this.toast.loadToast("Error al cargar meet-ups", 2000, 'danger');
       console.log(e.message)
@@ -167,7 +168,7 @@ export class MeetUpPage implements OnInit {
       });
     });
 
-    this.visibleTodos = this.todos.splice(0,6)
+    this.visibleTodos = this.todos.splice(0, 6)
 
   }
 
@@ -180,44 +181,44 @@ export class MeetUpPage implements OnInit {
     if (!this.currentUser) return;
 
 
-    if (this.myMeet.title == "" || this.myMeet.description == "" || this.myMeet.site == "" || this.myMeet.date == null || this.myMeet.hour == "" || this.myMeet.img == "" ){
+    if (this.myMeet.title == "" || this.myMeet.description == "" || this.myMeet.site == "" || this.myMeet.date == null || this.myMeet.hour == "" || this.myMeet.img == "") {
 
       this.toast.loadToast('Empty required fields', 2000, 'danger')
 
-    }else {
+    } else {
 
-    this.infinite.disabled = false
+      this.infinite.disabled = false
 
-    console.log(this.currentUser.uid)
-    try {
+      console.log(this.currentUser.uid)
+      try {
 
-      await addDoc(collection(this.db, "users", this.currentUser.uid, "meets"), {
-        title: this.myMeet.title,
-        description: this.myMeet.description,
-        site: this.myMeet.site,
-        date: this.myMeet.date,
-        hour: this.myMeet.hour,
-        img: this.myMeet.img,
-        participants_count: 1,
-        userId: this.currentUser.uid,
-        participants: [this.currentUser.uid]
-      });
-      console.log(this.myMeet)
-      this.myMeet.title = "",
-        this.myMeet.description = "",
-        this.myMeet.site = "",
-        this.myMeet.date = new Date(),
-        this.myMeet.hour = "",
-        this.myMeet.img = "",
-        // this.myMeet.participants_count = ""
-        this.myMeet.participants_count = 1
+        await addDoc(collection(this.db, "users", this.currentUser.uid, "meets"), {
+          title: this.myMeet.title,
+          description: this.myMeet.description,
+          site: this.myMeet.site,
+          date: this.myMeet.date,
+          hour: this.myMeet.hour,
+          img: this.myMeet.img,
+          participants_count: 1,
+          userId: this.currentUser.uid,
+          participants: [this.currentUser.uid]
+        });
+        console.log(this.myMeet)
+        this.myMeet.title = "",
+          this.myMeet.description = "",
+          this.myMeet.site = "",
+          this.myMeet.date = new Date(),
+          this.myMeet.hour = "",
+          this.myMeet.img = "",
+          // this.myMeet.participants_count = ""
+          this.myMeet.participants_count = 1
 
-      this.toast.loadToast("Tarea creada!", 2000, 'success');
-      await this.loadTodoList(this.currentUser.uid);
-    } catch (e: any) {
-      console.error(e.message);
-      this.toast.loadToast("Error al crear tarea", 2000, 'danger');
-    }
+        this.toast.loadToast("Tarea creada!", 2000, 'success');
+        await this.loadTodoList(this.currentUser.uid);
+      } catch (e: any) {
+        console.error(e.message);
+        this.toast.loadToast("Error al crear tarea", 2000, 'danger');
+      }
     }
   }
 
@@ -228,31 +229,29 @@ export class MeetUpPage implements OnInit {
   async updateTodo(todo: any) {
     if (!this.currentUser) return;
 
-    if (todo.title == "" || todo.description == "" || todo.site == "" || todo.date == "" || todo.hour == "" || todo.img == ""){
+    if (todo.title == "" || todo.description == "" || todo.site == "" || todo.date == "" || todo.hour == "" || todo.img == "") {
       this.toast.loadToast('Empy required fields', 2000, 'danger')
     } else {
 
+      this.infinite.disabled = false
 
+      try {
+        const todoRef = doc(this.db, "users", this.currentUser.uid, "meets", todo.id);
+        await setDoc(todoRef, {
+          title: todo.title,
+          description: todo.description,
+          site: todo.site,
+          date: todo.date,
+          hour: todo.hour,
+          img: todo.img,
+          participants_count: todo.participants_count,
+        }, {merge: true});
 
-    this.infinite.disabled = false
-
-    try {
-      const todoRef = doc(this.db, "users", this.currentUser.uid, "meets", todo.id);
-      await setDoc(todoRef, {
-        title: todo.title,
-        description: todo.description,
-        site: todo.site,
-        date: todo.date,
-        hour: todo.hour,
-        img: todo.img,
-        participants_count: todo.participants_count,
-      }, { merge: true });
-
-      this.toast.loadToast("Tarea actualizada", 2000, 'success');
-      await this.loadTodoList(this.currentUser.uid);
-    } catch (e: any) {
-      console.error("Error actualizando:", e.message);
-      this.toast.loadToast("Error al actualizar", 2000, 'danger');
+        this.toast.loadToast("Tarea actualizada", 2000, 'success');
+        await this.loadTodoList(this.currentUser.uid);
+      } catch (e: any) {
+        console.error("Error actualizando:", e.message);
+        this.toast.loadToast("Error al actualizar", 2000, 'danger');
       }
     }
   }
@@ -297,35 +296,35 @@ export class MeetUpPage implements OnInit {
       this.salir(all)
       return;
 
-    }else {
+    } else {
 
-    try {
-      const meetupRef = doc(this.db, "users", all.userId, "meets", all.id);
-      console.log('1 mas')
-      await updateDoc(meetupRef, {
-        participants_count: increment(1),
-        participants: arrayUnion(this.currentUser.uid)
-      });
+      try {
+        const meetupRef = doc(this.db, "users", all.userId, "meets", all.id);
+        console.log('1 mas')
+        await updateDoc(meetupRef, {
+          participants_count: increment(1),
+          participants: arrayUnion(this.currentUser.uid)
+        });
 
-      const index = this.todos.findIndex(t => t.id === all.id);
-      const index2 = this.visibleTodos.findIndex(t => t.id === all.id);
+        const index = this.todos.findIndex(t => t.id === all.id);
+        const index2 = this.visibleTodos.findIndex(t => t.id === all.id);
 
-      if (index > -1) {
-        this.todos[index].participants_count++;
-        this.todos[index].participants = [...(this.todos[index].participants || []), this.currentUser.uid];
+        if (index > -1) {
+          this.todos[index].participants_count++;
+          this.todos[index].participants = [...(this.todos[index].participants || []), this.currentUser.uid];
+        }
+
+        if (index2 > -1) {
+          this.visibleTodos[index2].participants_count++;
+          this.visibleTodos[index2].participants = [...(this.visibleTodos[index2].participants || []), this.currentUser.uid];
+        }
+
+        this.toast.loadToast("¡Te has unido!", 2000, 'success');
+      } catch (e: any) {
+        console.error("Error al unirse:", e);
+        this.toast.loadToast("Error al unirse", 2000, 'danger');
+        console.log(e.message)
       }
-
-      if (index2 > -1) {
-        this.visibleTodos[index2].participants_count++;
-        this.visibleTodos[index2].participants = [...(this.visibleTodos[index2].participants || []), this.currentUser.uid];
-      }
-
-      this.toast.loadToast("¡Te has unido!", 2000, 'success');
-    } catch (e: any) {
-      console.error("Error al unirse:", e);
-      this.toast.loadToast("Error al unirse", 2000, 'danger');
-      console.log(e.message)
-    }
     }
   }
 
@@ -368,15 +367,15 @@ export class MeetUpPage implements OnInit {
 
     console.log('infinite meet')
 
-    setTimeout(()=> {
+    setTimeout(() => {
       event.target.complete()
-      if (this.todos.length <= 4){
+      if (this.todos.length <= 4) {
         this.visibleTodos.push(...this.todos)
         event.target.disabled = true
-      }else {
-        this.visibleTodos.push(...this.todos.splice(0,4))
+      } else {
+        this.visibleTodos.push(...this.todos.splice(0, 4))
       }
-    },1000)
+    }, 1000)
 
   }
 }

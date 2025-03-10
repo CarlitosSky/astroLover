@@ -140,10 +140,7 @@ export const routes: Routes = [
         path: 'telescopes',
         loadComponent: () => import('./pages/telescopes/telescopes.page').then( m => m.TelescopesPage)
       },
-      {
-        path: 'cameras',
-        loadComponent: () => import('./pages/cameras/cameras.page').then( m => m.CamerasPage)
-      },
+
       {
         path: 'accesories',
         loadComponent: () => import('./pages/accesories/accesories.page').then( m => m.AccesoriesPage)
@@ -156,8 +153,18 @@ export const routes: Routes = [
         path: 'acce-detail/:id',
         loadComponent: () => import('./pages/acce-detail/acce-detail.page').then( m => m.AcceDetailPage)
       },
+      {
+        path: 'mount-detail/:id',
+        loadComponent: () => import('./pages/mount-detail/mount-detail.page').then( m => m.MountDetailPage)
+      },
+      {
+        path: 'camera-detail/:id',
+        loadComponent: () => import('./pages/camera-detail/camera-detail.page').then( m => m.CameraDetailPage)
+      },
+      {
+        path: 'tele-detail/:id',
+        loadComponent: () => import('./pages/tele-detail/tele-detail.page').then( m => m.TeleDetailPage)
+      },
     ]
   },
-
-
 ];

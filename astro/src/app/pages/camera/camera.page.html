@@ -1,1 +1,79 @@
-<app-header [tittle]="'See the stars'"></app-header>
+<app-header [tittle]="'Cameras'"/>
+
+<ion-content class="ion-padding">
+
+  <div class="search ion-justify-content-center ion-align-items-center flex">
+
+    <ion-searchbar animated="true" (ionInput)="search($event)"></ion-searchbar>
+
+  </div>
+
+  <div class="hola ion-justify-content-center ion-align-items-center flex" >
+
+    <ion-row>
+      <ion-col class="ion-justify-content-center ion-align-items-center" style="display: flex">
+        <ion-list>
+          <ion-item>
+            <ion-select label="Filters: " placeholder="Order By Asc" [(ngModel)]="gSelected" (ionChange)="changeFilter($event)">
+              <ion-select-option value="asc">order by price Asc</ion-select-option>
+              <ion-select-option value="desc">order by price Desc</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+
+  </div>
+
+  @for (ace of visibleCameras; track $index){
+
+    <ion-card [routerLink]="'/tabs/camera-detail/'+ace._id">
+
+      <ion-card-header>
+        <ion-toolbar>
+          <ion-title class="ion-text-center">{{ace.name}}</ion-title>
+        </ion-toolbar>
+      </ion-card-header>
+
+      <ion-card-content>
+
+        <ion-grid>
+
+          <ion-row>
+
+            <ion-col>
+              <swiper-container pagination="true" class="mySlider">
+
+                @for (pho of ace.photos; track $index){
+                  <swiper-slide>
+                    <ion-img [src]="pho" class="myphoto"/>
+                  </swiper-slide>
+                }
+              </swiper-container>
+            </ion-col>
+
+          </ion-row>
+
+          <ion-row>
+            <ion-col class="ion-justify-content-center ion-align-items-center flex">
+              <ion-text class="myModel">{{ace.model}} </ion-text>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="ion-justify-content-center ion-align-items-center flex">
+              <ion-text>  <strong>  Price :  </strong>  {{ace.price}}$</ion-text>
+            </ion-col>
+          </ion-row>
+
+        </ion-grid>
+      </ion-card-content>
+    </ion-card>
+  }
+
+  <ion-infinite-scroll threshold="150px" (ionInfinite)="loadData($event)">
+
+    <ion-infinite-scroll-content loading-spinner="crescent" loading-text="Loading more..."/>
+
+  </ion-infinite-scroll>
+
+</ion-content>
