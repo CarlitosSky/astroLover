@@ -4,7 +4,7 @@ import {Observable} from "rxjs";
 import {
   APODAPI, Articles, Astronauts, Astronomers,
   Cultures,
-  Galaxias,
+  Galaxias, Galleries,
   Planets,
   Provincia,
   RoverPhotos,
@@ -126,5 +126,52 @@ export class DataService {
   getSearch(query:string, cate:string):Observable<Articles[]> {
     return this.http.get<{status:string, data:Articles[]}>(environment.api_survived+'articles/search/'+cate+'?query='+query).pipe(map(response => response.data))
   }
+
+  //Gallery
+
+  getGalleriesAll():Observable<Galleries[]> {
+    return this.http.get<{data:Galleries[]}>(environment.api_survived+'gallery').pipe(map(response => response.data))
+  }
+
+  getGalleriesByIdFirebase(id:string):Observable<Galleries[]> {
+    return this.http.get<{status: string,count:number ,data:Galleries[]}>(environment.api_survived+'gallery/user/'+id).pipe(map(response => response.data))
+  }
+
+  getGallerieOne(id:string):Observable<Galleries> {
+    return this.http.get<{status:string,data:Galleries}>(environment.api_survived+'gallery/one/'+id).pipe(map(response => response.data))
+  }
+
+  getGallerieSearch(query:string):Observable<Galleries[]> {
+    return this.http.get<{status:string,data:Galleries[]}>(environment.api_survived+'gallery/search?query='+query).pipe(map(response => response.data))
+  }
+
+  getGallerieHastags():Observable<Galleries[]> {
+    return this.http.get<{status:string,data:Galleries[]}>(environment.api_survived+'gallery/hastags').pipe(map(response => response.data))
+  }
+
+  getGallerieHastagsOne(hastag:string):Observable<Galleries[]> {
+    return this.http.get<{status:string,data:Galleries[]}>(environment.api_survived+'gallery/hastags/'+hastag).pipe(map(response => response.data))
+  }
+
+  updateGallery(gallery : Galleries):Observable<Galleries> {
+    return this.http.put<{status:string, data: Galleries}>(environment.api_survived+'gallery/'+gallery._id, gallery).pipe(map(response => response.data))
+  }
+
+  addGallery(gallery:Galleries):Observable<Galleries> {
+    return this.http.post<Galleries>(environment.api_survived+'gallery',gallery)
+  }
+
+  deleteGallery(_id:string):Observable<Galleries>{
+    return this.http.delete<Galleries>(environment.api_survived+'gallery/'+_id)
+  }
+
+
+
+
+
+
+
+
+
 
 }

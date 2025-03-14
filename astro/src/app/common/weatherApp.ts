@@ -174,4 +174,17 @@ export interface Articles {
 
 }
 
+export interface Galleries {
+
+  _id?:string
+  name:string
+  photos: string[]
+  hastag:string[]
+  description:string
+  site:string
+  idFirebase:string
+
+}
+
+
 

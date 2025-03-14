@@ -1,21 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
+    <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87f09b7f-afdb-4eb2-af7e-76fe03092743" name="Changes" comment="api de articulos creada, insertado mas articulos, pagina de accesorios creada">
+    <list default="true" id="87f09b7f-afdb-4eb2-af7e-76fe03092743" name="Changes" comment="pagina de articulos acabada, empezamos con anuncios">
+      <change afterPath="$PROJECT_DIR$/astro/src/assets/astroloverLogo.PNG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro/capacitor.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/astro/capacitor.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/astro/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/astro/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/app.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/astro/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/app.routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro/src/app/pages/camera/camera.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/pages/camera/camera.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro/src/app/pages/camera/camera.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/pages/camera/camera.page.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro/src/app/pages/camera/camera.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/pages/camera/camera.page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro/src/app/pages/meet-up/meet-up.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/pages/meet-up/meet-up.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro/src/app/common/weatherApp.ts" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/common/weatherApp.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro/src/app/component/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/component/header/header.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro/src/app/component/menu/menu.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/component/menu/menu.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro/src/app/pages/details-weather/details-weather.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/pages/details-weather/details-weather.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro/src/app/pages/meet-up/meet-up.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/pages/meet-up/meet-up.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro/src/app/pages/tabs/tabs.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/pages/tabs/tabs.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro/src/app/services/data.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/app/services/data.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/astro/src/environments/environment.prod.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -60,11 +73,16 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Node.js.app.component.ts.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/carlo/WebstormProjects/Administracion_de_series&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/carlo/WebstormProjects/astroLover&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -144,7 +162,23 @@
       <workItem from="1741393615354" duration="3000" />
       <workItem from="1741529528939" duration="21523000" />
       <workItem from="1741563579126" duration="881000" />
-      <workItem from="1741627732415" duration="5134000" />
+      <workItem from="1741627732415" duration="8815000" />
+      <workItem from="1741638082501" duration="274000" />
+      <workItem from="1741638535113" duration="367000" />
+      <workItem from="1741638920031" duration="645000" />
+      <workItem from="1741639580613" duration="1156000" />
+      <workItem from="1741640864037" duration="406000" />
+      <workItem from="1741641571330" duration="1028000" />
+      <workItem from="1741642814104" duration="162000" />
+      <workItem from="1741643022161" duration="1687000" />
+      <workItem from="1741648512334" duration="6000" />
+      <workItem from="1741648710880" duration="578000" />
+      <workItem from="1741770437122" duration="5149000" />
+      <workItem from="1741796157487" duration="7620000" />
+      <workItem from="1741862922485" duration="1748000" />
+      <workItem from="1741864825782" duration="4162000" />
+      <workItem from="1741869186330" duration="2470000" />
+      <workItem from="1741969706971" duration="7087000" />
     </task>
     <task id="LOCAL-00001" summary="pagina de profile creada empezamos con firebase realtime">
       <option name="closed" value="true" />
@@ -218,7 +252,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741551938658</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="pagina de articulos acabada, empezamos con anuncios">
+      <option name="closed" value="true" />
+      <created>1741634274870</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1741634274871</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,6 +277,7 @@
     <MESSAGE value="pagina de astronomos creada y detalles tambien" />
     <MESSAGE value="retoques terminados paginas y apis, empezamos con cambiar tema de colores" />
     <MESSAGE value="api de articulos creada, insertado mas articulos, pagina de accesorios creada" />
-    <option name="LAST_COMMIT_MESSAGE" value="api de articulos creada, insertado mas articulos, pagina de accesorios creada" />
+    <MESSAGE value="pagina de articulos acabada, empezamos con anuncios" />
+    <option name="LAST_COMMIT_MESSAGE" value="pagina de articulos acabada, empezamos con anuncios" />
   </component>
 </project>

@@ -165,6 +165,10 @@ export const routes: Routes = [
         path: 'tele-detail/:id',
         loadComponent: () => import('./pages/tele-detail/tele-detail.page').then( m => m.TeleDetailPage)
       },
+      {
+        path: 'gallery',
+        loadComponent: () => import('./pages/gallery/gallery.page').then( m => m.GalleryPage)
+      },
     ]
   },
 ];

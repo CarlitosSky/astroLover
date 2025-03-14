@@ -35,7 +35,6 @@ export class DetailsWeatherPage implements OnInit {
   id = this.route.snapshot.paramMap.get('CODPROV')!;
 
   constructor() {
-
   }
 
   ngOnInit() {
